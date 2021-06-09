@@ -4,7 +4,7 @@ import ArtGenerator from '../../containers/ArtGenerator';
 import ECard from '../../containers/ECard';
 import Gallery from '../../containers/Gallery';
 import AboutUs from '../../containers/AboutUs';
-import Header from '../Header';
+import Header from '../header/Header';
 
 export default function App() {
   return (
