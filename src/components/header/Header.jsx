@@ -1,10 +1,9 @@
 /* eslint-disable indent */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import styles from './Header.css';
 
-function Header(props) {
+function Header() {
   return (
     <div className={styles.linkWrapper}>
       <Link to="/">
@@ -22,7 +21,5 @@ function Header(props) {
     </div>
   );
 }
-
-Header.propTypes = {};
 
 export default Header;

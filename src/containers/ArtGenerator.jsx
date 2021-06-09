@@ -2,14 +2,15 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
+import downloadCanvas from '../utils/utils';
 import styles from './ArtGenerator.css';
 
 export default function ArtGenerator() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
-    // setloading here
+    setLoading(false);
     console.log('***', counter);
   }, [counter]);
 
@@ -43,27 +44,28 @@ export default function ArtGenerator() {
   };
 
   const handleSaveClick = () => {
-    console.log('Save button clicked');
+    downloadCanvas();
+  //   console.log('Save button clicked');
 
-    // get canvas data
-    const canvas = document.getElementsByClassName('p5Canvas');
-    console.log(canvas);
-    const dataURL = canvas[0].toDataURL('image/png');
-    console.log(dataURL);
+  //   // get canvas data
+  //   const canvas = document.getElementsByClassName('p5Canvas');
+  //   console.log(canvas);
+  //   const dataURL = canvas[0].toDataURL('image/png');
+  //   console.log(dataURL);
 
-    // create temporary link (could make all of this a util function)
-    const saveCanvas = document.createElement('a');
-    saveCanvas.download = 'greeting.png';
-    saveCanvas.href = dataURL;
+  //   // create temporary link (could make all of this a util function)
+  //   const saveCanvas = document.createElement('a');
+  //   saveCanvas.download = 'greeting.png';
+  //   saveCanvas.href = dataURL;
 
-  // temporarily add link to body and initiate download
-    document.body.appendChild(saveCanvas);
-    saveCanvas.click();
-    document.body.removeChild(saveCanvas);
-    console.log('Canvas saved!');
+  // // temporarily add link to body and initiate download
+  //   document.body.appendChild(saveCanvas);
+  //   saveCanvas.click();
+  //   document.body.removeChild(saveCanvas);
+  //   console.log('Canvas saved!');
   }; 
 
-  if (loading) return <h2>loading...</h2>;
+  if(loading) return <h2>loading...</h2>;
 
   return (
     <main className={styles.artPage}>
