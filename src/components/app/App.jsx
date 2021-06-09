@@ -1,5 +1,37 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ArtGenerator from '../../containers/ArtGenerator';
+import ECard from '../../containers/ECard';
+import Gallery from '../../containers/Gallery';
+import AboutUs from '../../containers/AboutUs';
+import Header from '../Header';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <Router>
+      <Header />
+      <Switch>
+        <Route
+          path="/"
+          exact
+          render={(routerProps) => <ArtGenerator {...routerProps} />}
+        />
+        <Route
+          path="/ecard"
+          exact
+          render={(routerProps) => <ECard {...routerProps} />}
+        />
+        <Route
+          path="/gallery"
+          exact
+          render={(routerProps) => <Gallery {...routerProps} />}
+        />
+        <Route
+          path="/aboutus"
+          exact
+          render={(routerProps) => <AboutUs {...routerProps} />}
+        />
+      </Switch>
+    </Router>
+  );
 }
