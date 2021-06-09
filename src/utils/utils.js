@@ -7,7 +7,7 @@ export default function downloadCanvas(){
     const dataURL = canvas[0].toDataURL('image/png');
     console.log(dataURL);
 
-    // create temporary link (could make all of this a util function)
+    // create temporary link
     const saveCanvas = document.createElement('a');
     saveCanvas.download = 'greeting.png';
     saveCanvas.href = dataURL;
