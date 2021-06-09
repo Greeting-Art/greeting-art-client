@@ -3,16 +3,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function GalleryDetail(props) {
-    return (
-        <div>
-            
-        </div>
-    );
+  return (
+    <div>
+      <h4>Gallery Detail Test</h4>
+    </div>
+  );
 }
 
-GalleryDetail.propTypes = {
-
-};
+GalleryDetail.propTypes = {};
 
 export default GalleryDetail;
-
