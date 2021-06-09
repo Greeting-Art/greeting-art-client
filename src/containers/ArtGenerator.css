@@ -1,0 +1,46 @@
+.artPage {
+  display: grid;
+  grid-template-rows: 15vh 85vh;
+}
+
+.artHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.artBody {
+  display: grid;
+  grid-template-rows: 2fr 6fr 2fr;
+}
+
+.controlBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.artBar {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftColumn,
+.centerColumn,
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lowerBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
