@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`random art generation container displays inputs + an image + buttons 1`] = `
+<h2>
+  loading...
+</h2>
+`;

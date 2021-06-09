@@ -1,14 +1,13 @@
 /**
  * @jest-environment jsdom
  */
-
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import ArtGenerator from './ArtGenerator';
+import Gallery from './Gallery';
 
-describe('random art generation container', () => {
-  it('displays inputs + an image + buttons', async () => {
-    render(<ArtGenerator />);
+describe('art gallery container', () => {
+  it('displays a list of pieces of art', async () => {
+    render(<Gallery />);
 
     const screenLoading = await screen.getByText('loading...');
     expect(screenLoading).toMatchSnapshot();
