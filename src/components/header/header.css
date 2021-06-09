@@ -1,0 +1,10 @@
+.linkWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+h3 {
+  margin: 20px;
+}
