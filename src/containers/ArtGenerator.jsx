@@ -19,21 +19,13 @@ export default function ArtGenerator() {
       p5.background(255);
       // p5.noStroke();
 
-      for(let i = 0; i < 100; i++) {
+      for (let i = 0; i < 100; i++) {
         p5.fill(p5.random(255), p5.random(255), p5.random(255), p5.random(255));
-        
-        p5.square(
-          p5.random(400),
-          p5.random(400),
-          p5.random(100)
-          );
-          
-          p5.circle(
-            p5.random(400),
-            p5.random(400),
-            p5.random(100)
-            );
-          }
+
+        p5.square(p5.random(400), p5.random(400), p5.random(100));
+
+        p5.circle(p5.random(400), p5.random(400), p5.random(100));
+      }
     };
   };
 
@@ -56,12 +48,12 @@ export default function ArtGenerator() {
     saveCanvas.download = 'greeting.png';
     saveCanvas.href = dataURL;
 
-  // temporarily add link to body and initiate download
+    // temporarily add link to body and initiate download
     document.body.appendChild(saveCanvas);
     saveCanvas.click();
     document.body.removeChild(saveCanvas);
     console.log('Canvas saved!');
-  }; 
+  };
 
   if (loading) return <h2>loading...</h2>;
 
@@ -79,13 +71,13 @@ export default function ArtGenerator() {
           </div>
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>
-            <P5Wrapper sketch={sketch} />
+              <P5Wrapper sketch={sketch} />
               {/* <img src="https://i.ytimg.com/vi/PXye-6_ZB1w/hqdefault.jpg" /> */}
             </figure>
           </div>
           <div className={styles.rightColumn}>
-          <button onClick={handleRandomClick}>Randomize</button>
-          <button onClick={handleSaveClick}>Save</button>
+            <button onClick={handleRandomClick}>Randomize</button>
+            <button onClick={handleSaveClick}>Save</button>
           </div>
         </div>
         <div className={styles.lowerBar}>
