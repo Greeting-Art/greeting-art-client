@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders App 1`] = `
+<DocumentFragment>
+  <div
+    class="linkWrapper"
+  >
+    <a
+      href="/"
+    >
+      <h3>
+        Home
+      </h3>
+    </a>
+    <a
+      href="/ecard"
+    >
+      <h3>
+        ECard
+      </h3>
+    </a>
+    <a
+      href="/gallery"
+    >
+      <h3>
+        Gallery
+      </h3>
+    </a>
+    <a
+      href="/aboutus"
+    >
+      <h3>
+        About Us
+      </h3>
+    </a>
+  </div>
+  <div>
+    hey
+  </div>
+</DocumentFragment>
+`;
