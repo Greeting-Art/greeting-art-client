@@ -5,6 +5,7 @@ import ECard from '../../containers/ECard';
 import Gallery from '../../containers/Gallery';
 import AboutUs from '../../containers/AboutUs';
 import Header from '../header/Header';
+import './app.css';
 
 export default function App() {
   return (
