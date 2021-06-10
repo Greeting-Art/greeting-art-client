@@ -10,6 +10,8 @@ export default function ArtGenerator() {
   const [loading, setLoading] = useState(true);
   const [counter, setCounter] = useState(0);
 
+  console.log('P5', P5Wrapper);
+
   useEffect(() => {
     setLoading(false);
     console.log('***', counter);
