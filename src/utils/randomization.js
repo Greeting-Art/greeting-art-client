@@ -20,12 +20,3 @@ export const randomArt = () => {
   };
   return sketch;
 };
-
-export const newArt = () => {
-  const artTitle = () => {
-    let wordOne = 'red';
-    let wordTwo = 'barn';
-    return `${wordOne}-${wordTwo}`;
-  };
-  return artTitle;
-};

@@ -5,13 +5,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import App from '../components/app/App';
-//import ArtGenerator from './ArtGenerator';
 // import ArtGenerator from './ArtGenerator';
-// import { rest } from 'msw';
-// import { setupServer } from 'msw/node';
 
 jest.mock('./ArtGenerator', () => () => <div>hey</div>);
 
+//// for ref -- here is what <P5Wrapper /> console logs as:
 // const P5Wrapper = function P5Wrapper(props) {
 //   var _this = _super.call(this, props) || this;
 //   _this.wrapper = null;
@@ -21,8 +19,6 @@ jest.mock('./ArtGenerator', () => () => <div>hey</div>);
 //   });
 //   return _this;
 // };
-
-//mock the randomization.js file in simple fashion here;
 
 describe('random art generation container', () => {
   it('displays inputs + an image + buttons', async () => {
