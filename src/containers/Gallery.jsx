@@ -1,10 +1,14 @@
 /* eslint-disable indent */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Gallery.css';
 import GalleryList from '../components/galleryList/GalleryList';
 
 export default function Gallery() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(false);
+  }, []);
 
   if (loading) return <h2>loading...</h2>;
 
