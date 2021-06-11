@@ -7,6 +7,7 @@ import AboutUs from '../../containers/AboutUs';
 import Alchemy from '../specialized/Alchemy';
 import BDRyan from '../specialized/BDRyan';
 import QuackMan from '../specialized/QuackMan';
+import Poetry from '../specialized/Poetry';
 import Header from '../header/Header';
 import './app.css';
 
@@ -49,6 +50,11 @@ export default function App() {
           path="/quack"
           exact
           render={(routerProps) => <QuackMan {...routerProps} />}
+        />
+        <Route
+          path="/poetry"
+          exact
+          render={(routerProps) => <Poetry {...routerProps} />}
         />
       </Switch>
     </Router>
