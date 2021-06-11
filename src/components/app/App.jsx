@@ -4,6 +4,9 @@ import ArtGenerator from '../../containers/ArtGenerator';
 import ECard from '../../containers/ECard';
 import Gallery from '../../containers/Gallery';
 import AboutUs from '../../containers/AboutUs';
+import Alchemy from '../specialized/Alchemy';
+import BDRyan from '../specialized/BDRyan';
+import QuackMan from '../specialized/QuackMan';
 import Header from '../header/Header';
 import './app.css';
 
@@ -31,6 +34,21 @@ export default function App() {
           path="/aboutus"
           exact
           render={(routerProps) => <AboutUs {...routerProps} />}
+        />
+        <Route
+          path="/alchemy"
+          exact
+          render={(routerProps) => <Alchemy {...routerProps} />}
+        />
+        <Route
+          path="/ryan"
+          exact
+          render={(routerProps) => <BDRyan {...routerProps} />}
+        />
+        <Route
+          path="/quack"
+          exact
+          render={(routerProps) => <QuackMan {...routerProps} />}
         />
       </Switch>
     </Router>
