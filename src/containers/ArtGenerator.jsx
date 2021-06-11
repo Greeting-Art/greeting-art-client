@@ -2,7 +2,7 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
-import { randomArt } from '../utils/randomization';
+import { randomArt, weirdArt } from '../utils/randomization';
 import downloadCanvas from '../utils/utils';
 import styles from './ArtGenerator.css';
 
@@ -17,8 +17,8 @@ export default function ArtGenerator() {
     console.log('***', counter);
   }, [counter]);
 
-  const artwork = randomArt();
-  
+  const artwork = weirdArt();
+
   const handleRandomClick = () => {
     setCounter(counter + 1);
     console.log('>>>', counter);
@@ -28,7 +28,7 @@ export default function ArtGenerator() {
     downloadCanvas();
   };
 
-  if(loading) return <h2>loading...</h2>;
+  if (loading) return <h2>loading...</h2>;
 
   return (
     <main className={styles.artPage}>

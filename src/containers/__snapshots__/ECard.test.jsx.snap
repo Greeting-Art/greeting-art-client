@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`email setup page for sending eCard displays selected art + inputs + send button 1`] = `
-<h2>
-  loading...
-</h2>
-`;
