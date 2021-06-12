@@ -18,6 +18,31 @@
                               'embedded-opentype', and 'svg' */
 }
 
+@font-face {
+  font-family: 'Blackpine';
+  src: local('Blackpine-4BEVW'),
+    url(../../fonts/Blackpine-4BEVW.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'ThreeDThirteen';
+  src: local('3DThirteenPixelFontsRegular-2dPv'),
+    url(../../fonts/3DThirteenPixelFontsRegular-2dPv.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Sagha';
+  src: local('Sagha-WyOO4'), url(../../fonts/Sagha-WyOO4.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
 body {
   font-family: 'Roboto Mono', monospace;
+  background-color: royalblue;
+  color: white;
 }
