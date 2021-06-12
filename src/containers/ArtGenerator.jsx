@@ -18,7 +18,14 @@ export default function ArtGenerator() {
     console.log('***', counter);
   }, [counter]);
 
-  const artwork = randomArt();
+  const functionArray = [randomArt(), weirdArt()];
+
+  const toggleArtSource = () => {
+    const variax = Math.round(Math.random() * 1);
+    const artSource = functionArray[variax];
+    return artSource;
+  };
+  //const artwork = randomArt();
   // const artwork = weirdArt();
 
   const handleRandomClick = () => {
@@ -50,7 +57,7 @@ export default function ArtGenerator() {
           </div>
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>
-              <P5Wrapper sketch={artwork} />
+              <P5Wrapper sketch={toggleArtSource()} />
               {/* <img src="https://i.ytimg.com/vi/PXye-6_ZB1w/hqdefault.jpg" /> */}
             </figure>
           </div>
