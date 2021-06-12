@@ -5,20 +5,25 @@ import styles from './header.css';
 
 function Header() {
   return (
-    <div className={styles.linkWrapper}>
-      <Link to="/">
-        <h3>Home</h3>
-      </Link>
-      <Link to="/ecard">
-        <h3>ECard</h3>
-      </Link>
-      <Link to="/gallery">
-        <h3>Gallery</h3>
-      </Link>
-      <Link to="/aboutus">
-        <h3>About Us</h3>
-      </Link>
-    </div>
+    <section className={styles.fullHeader}>
+      <div className={styles.linkBar}>
+        <Link to="/">
+          <p>Home</p>
+        </Link>
+        <Link to="/ecard">
+          <p>ECard</p>
+        </Link>
+        <Link to="/gallery">
+          <p>Gallery</p>
+        </Link>
+        <Link to="/aboutus">
+          <p>About Us</p>
+        </Link>
+      </div>
+      <div className={styles.titleBar}>
+        <p>Greeting Art</p>
+      </div>
+    </section>
   );
 }
 

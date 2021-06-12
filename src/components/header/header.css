@@ -1,10 +1,27 @@
-.linkWrapper {
+.fullHeader {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.linkBar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: left;
+  font-size: 0.8em;
+  background-color: white;
 }
 
-h3 {
+p {
   margin: 20px;
+}
+
+.titleBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: ThreeDThirteen;
+  font-weight: lighter;
+  font-size: 5em;
 }

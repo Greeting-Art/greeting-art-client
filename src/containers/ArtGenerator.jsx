@@ -33,7 +33,7 @@ export default function ArtGenerator() {
   return (
     <main className={styles.artPage}>
       <section className={styles.artHeader}>
-        <p>Art Generator</p>
+        <h1>Art Generator</h1>
       </section>
 
       <section className={styles.artBody}>
