@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
+/* https://stackoverflow.com/questions/41676054/how-to-add-fonts-to-create-react-app-based-projects */
+
 @font-face {
   font-family: 'ImpactLabel';
   src: local('ImpactLabel-lVYZ'),
     url(../../fonts/ImpactLabel-lVYZ.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'ImpactLabel Reverse';
+  src: local('ImpactLabel-lVYZ'),
+    url(../../fonts/ImpactLabelReversed-nDMR.ttf) format('truetype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
 }

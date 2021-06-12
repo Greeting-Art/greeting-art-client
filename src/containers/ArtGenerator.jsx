@@ -18,7 +18,7 @@ export default function ArtGenerator() {
   }, [counter]);
 
   const artwork = randomArt();
-  
+
   const handleRandomClick = () => {
     setCounter(counter + 1);
     console.log('>>>', counter);
@@ -28,7 +28,7 @@ export default function ArtGenerator() {
     downloadCanvas();
   };
 
-  if(loading) return <h2>loading...</h2>;
+  if (loading) return <h2>loading...</h2>;
 
   return (
     <main className={styles.artPage}>
@@ -49,8 +49,12 @@ export default function ArtGenerator() {
             </figure>
           </div>
           <div className={styles.rightColumn}>
-            <button onClick={handleRandomClick}>Randomize</button>
-            <button onClick={handleSaveClick}>Save</button>
+            <button className={styles.randomButton} onClick={handleRandomClick}>
+              Randomize
+            </button>
+            <button className={styles.saveButton} onClick={handleSaveClick}>
+              Save
+            </button>
           </div>
         </div>
         <div className={styles.lowerBar}>

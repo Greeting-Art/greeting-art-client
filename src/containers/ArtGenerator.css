@@ -39,7 +39,50 @@
 }
 
 .leftColumn {
-  font-family: ImpactLabel;
+  font-family: ImpactLabel Reverse;
+  background-color: royalblue;
+  color: white;
+}
+
+.rightColumn {
+  background-color: royalblue;
+}
+
+.randomButton,
+.saveButton {
+  font-family: ImpactLabel Reverse;
+  background-color: royalblue;
+  color: white;
+  padding: 8px;
+  border-radius: 0;
+  border: none;
+  font-size: 1em;
+  /* background: none; */
+  box-shadow: none;
+  width: 120px;
+  margin: 4px;
+}
+
+/* cursor hovers over the button */
+.randomButton:hover,
+.saveButton:hover {
+  font-family: ImpactLabel Reverse;
+  background-color: royalblue;
+  color: white;
+  border: double 1px white;
+  /* background: none; */
+  box-shadow: none;
+}
+
+/* mouse click on the button */
+.randomButton:active,
+.saveButton:active {
+  font-family: ImpactLabel Reverse;
+  background-color: white;
+  color: royalblue;
+  border: dotted 1px white;
+  /* background: none; */
+  box-shadow: none;
 }
 
 .lowerBar {
