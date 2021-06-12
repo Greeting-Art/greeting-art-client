@@ -4,6 +4,7 @@ function sendMsg(formData) {
     return {
         method: 'POST',
         headers: {
+            'Access-Control-Allow-Origin': '*',
             'Accept': '*/*',
             'Accept-Encoding': 'gzip, deflate, br',
             'Content-Type': 'application/json'

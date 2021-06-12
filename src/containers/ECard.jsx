@@ -35,7 +35,7 @@ export default function ECard() {
 
   const handleSumbit = async (e) => {
     e.preventDefault()
-    await fetch('http://localhost:7890/send', sendMsg(formData))
+    await fetch('https://limitless-everglades-53305.herokuapp.com/send', sendMsg(formData))
       .then(res => res.json())
       .then(setSent('You have sent an email successfully'))
   }
