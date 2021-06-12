@@ -11,7 +11,8 @@ export default function ArtGenerator() {
   const [counter, setCounter] = useState(0);
   const [color, setColor] = useState('red');
 
-  console.log('P5', P5Wrapper);
+  console.log('Color:', color);
+  //console.log('P5', P5Wrapper);
 
   useEffect(() => {
     setLoading(false);
@@ -25,6 +26,7 @@ export default function ArtGenerator() {
     const artSource = functionArray[variax];
     return artSource;
   };
+
   //const artwork = randomArt();
   // const artwork = weirdArt();
 

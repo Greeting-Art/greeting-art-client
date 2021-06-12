@@ -36,7 +36,7 @@ const randomizeCurve = () => {
 export const weirdArt = () => {
   const sketch = (p5) => {
     p5.setup = () => {
-      p5.createCanvas(560, 560);
+      p5.createCanvas(400, 400);
       // p5.noStroke();
       p5.stroke(randomizeColor(), randomizeColor(), randomizeColor());
       // p5.background(randomizeColor(), randomizeColor(), randomizeColor());
