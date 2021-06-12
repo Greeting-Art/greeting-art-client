@@ -38,6 +38,10 @@
   justify-content: center;
 }
 
+.leftColumn {
+  font-family: ImpactLabel;
+}
+
 .lowerBar {
   display: flex;
   flex-direction: row;

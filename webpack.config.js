@@ -85,6 +85,10 @@ module.exports = {
           options: { limit: 1000 },
         },
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
 };
