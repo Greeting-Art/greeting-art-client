@@ -1,6 +1,7 @@
 /* eslint-disable indent */
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import styles from './header.css';
 
 function Header() {
@@ -11,7 +12,7 @@ function Header() {
           <p>Home</p>
         </Link>
         <Link to="/ecard">
-          <p>ECard</p>
+          <p>✉ ECard</p>
         </Link>
         <Link to="/gallery">
           <p>Gallery</p>
