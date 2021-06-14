@@ -2,7 +2,8 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
-import { randomArt, weirdArt } from '../utils/randomization';
+import { randomArt, weirdArt, strangeArt } from '../utils/randomization';
+import { geometricArt } from '../utils/geometrify';
 import downloadCanvas from '../utils/utils';
 import styles from './ArtGenerator.css';
 
@@ -19,7 +20,7 @@ export default function ArtGenerator() {
     console.log('***', counter);
   }, [counter]);
 
-  const functionArray = [randomArt(), weirdArt()];
+  const functionArray = [randomArt(), strangeArt()];
 
   const toggleArtSource = () => {
     const variax = Math.round(Math.random() * 1);
@@ -29,6 +30,7 @@ export default function ArtGenerator() {
 
   //const artwork = randomArt();
   // const artwork = weirdArt();
+  const artwork = geometricArt();
 
   const handleRandomClick = () => {
     setCounter(counter + 1);
@@ -59,7 +61,7 @@ export default function ArtGenerator() {
           </div>
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>
-              <P5Wrapper sketch={toggleArtSource()} />
+              <P5Wrapper sketch={artwork} />
               {/* <img src="https://i.ytimg.com/vi/PXye-6_ZB1w/hqdefault.jpg" /> */}
             </figure>
           </div>
