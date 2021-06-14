@@ -2,12 +2,16 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Gallery.css';
 import GalleryList from '../components/galleryList/GalleryList';
+import { getGallery } from '../utils/s3-utils';
 
 export default function Gallery() {
   const [loading, setLoading] = useState(true);
+  const [artwork, setArtwork] = useState([]);
 
   useEffect(() => {
-    setLoading(false);
+    getGallery()
+    .then((artwork)=> setArtwork(artwork))
+    .finally(()=> setLoading(false));
   }, []);
 
   if (loading) return <h2>loading...</h2>;
@@ -16,6 +20,9 @@ export default function Gallery() {
     <main className={styles.galleryPage}>
       <section className={styles.galleryHeader}>
         <h1>Gallery</h1>
+      </section>
+      <section className='gallery-art'>
+        <GalleryList Contents = {artwork}/>
       </section>
 
       <section className={styles.galleryBody}>
