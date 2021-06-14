@@ -4,7 +4,8 @@ import React, { useState, useEffect } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
 import SaveAndGalleryButtons from '../components/artControls/SaveAndGalleryButtons';
 import FileUploader from '../components/fileUploader/FileUploader';
-import { randomArt } from '../utils/randomization';
+import { randomArt, weirdArt } from '../utils/randomization';
+import { geometricArt } from '../utils/geometrify';
 import downloadCanvas from '../utils/utils';
 import styles from './ArtGenerator.css';
 
@@ -20,7 +21,15 @@ export default function ArtGenerator() {
   }, [counter]);
 
   const artwork = randomArt();
-  
+
+  const functionArray = [randomArt(), weirdArt(), geometricArt()];
+
+  const toggleArtSource = () => {
+    const variableAxe = Math.round(Math.random() * functionArray.length);
+    const artSource = functionArray[variableAxe];
+    return artSource;
+  };
+
   const handleRandomClick = () => {
     setCounter(counter + 1);
     console.log('>>>', counter);
@@ -30,7 +39,7 @@ export default function ArtGenerator() {
     downloadCanvas();
   };
 
-  if(loading) return <h2>loading...</h2>;
+  if (loading) return <h2>loading...</h2>;
 
   return (
     <main className={styles.artPage}>
@@ -46,15 +55,13 @@ export default function ArtGenerator() {
           </div>
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>
-              <P5Wrapper sketch={artwork} />
+              <P5Wrapper sketch={toggleArtSource()} />
               {/* <img src="https://i.ytimg.com/vi/PXye-6_ZB1w/hqdefault.jpg" /> */}
             </figure>
           </div>
           <div className={styles.rightColumn}>
             <button onClick={handleRandomClick}>Randomize</button>
-            <SaveAndGalleryButtons 
-            handleSaveClick={handleSaveClick}
-            />
+            <SaveAndGalleryButtons handleSaveClick={handleSaveClick} />
             {/* <FileUploader /> */}
           </div>
         </div>
