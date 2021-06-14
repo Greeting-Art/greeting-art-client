@@ -6,7 +6,8 @@ import { getGallery } from '../utils/s3-utils';
 
 export default function Gallery() {
   const [loading, setLoading] = useState(true);
-  const [artwork, setArtwork] = getGallery();
+  const [artwork, setArtwork] = useState([]);
+
   useEffect(() => {
     getGallery()
     .then((artwork)=> setArtwork(artwork))
