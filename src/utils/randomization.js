@@ -97,22 +97,3 @@ export const weirdArt = () => {
   };
   return sketch;
 };
-
-export const strangeArt = () => {
-  const sketch = (p5) => {
-    p5.setup = () => {
-      p5.createCanvas(100, 100);
-      p5.background(randomizeRatio());
-    };
-
-    const draw = () => {
-      p5.square(
-        p5.random(p5.windowWidth),
-        p5.random(p5.windowHeight),
-        p5.random(newDensity)
-      );
-    };
-    console.log('>>>', sketch);
-  };
-  return sketch;
-};
