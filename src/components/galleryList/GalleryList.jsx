@@ -9,7 +9,7 @@ function GalleryList({Contents}) {
         <ul>
             {Contents.map((artWork) => 
                 <li key={artWork.Key}>
-                    <Art Key={artWork.Key}/>
+                    <GalleryDetail Key={artWork.Key}/>
                 </li>
             )}
             
