@@ -11,24 +11,28 @@ function AboutUsComp() {
             <h1 className={styles.teamHeader}>About the Team</h1>
                 <div className={styles.teamMembers}>
                     <div className={styles.memberItem}>
+                        <p>hello this is a test!</p>
                         {/* <img alt='Sam' src={sam} />
                         <div>Software Engineer</div>
-                        <a href="linkedinLink"><img src="linkedIn.png" alt="linkedIn"/></a>
-                        <a href="githubLink"><img src="githubIn.png" alt="github"/></a> */}
+                        <a href="linkedinLink"><img src="linkedin.png" alt="linkedIn"/></a>
+                        <a href="githubLink"><img src="github.png" alt="github"/></a> */}
                     </div>
                     <div className={styles.memberItem}>
+                        <p>hello this is a test!</p>
                         {/* <img alt='Parker' src={parker} />
                         <div>Software Engineer</div>
-                        <a href="linkedinLink"><img src="linkedIn.png" alt="linkedIn"/></a>
-                        <a href="githubLink"><img src="githubIn.png" alt="github"/></a> */}
+                        <a href="linkedinLink"><img src="linkedin.png" alt="linkedIn"/></a>
+                        <a href="githubLink"><img src="github.png" alt="github"/></a> */}
                     </div>
                     <div className={styles.memberItem}>
+                        <p>hello this is a test!</p>
                         {/* <img alt='Eion' src={eion} />
                         <div>Software Engineer</div>
-                        <a href="linkedinLink"><img src="linkedIn.png" alt="linkedIn"/></a>
-                        <a href="githubLink"><img src="githubIn.png" alt="github"/></a> */}
+                        <a href="linkedinLink"><img src="linkedin.png" alt="linkedIn"/></a>
+                        <a href="githubLink"><img src="github.png" alt="github"/></a> */}
                     </div>
                     <div className={styles.memberItem}>
+                        <p>hello this is a test!</p>
                         {/* <img alt='Stephen' src={stephen} />
                         <div>Software Engineer</div>
                         <a href="linkedinLink"><img src="linkedIn.png" alt="linkedIn"/></a>
