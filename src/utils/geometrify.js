@@ -10,8 +10,24 @@ const randomizeNumber = () => {
   return Math.round(Math.random() * artResolution);
 };
 
+const randomizeSize = () => {
+  return Math.round(Math.random() * 80);
+};
+
 const shapeArray2D = ['circle', 'rect', 'triangle'];
 const curveArray = ['bezier', 'vertex', 'curve'];
+
+const posNegToggle = () => {
+  const posNegArray = [1, -1];
+  return posNegArray[Math.round(Math.random() * 1)];
+};
+
+const triAnchorOne = randomizeNumber();
+const triAnchorTwo = triAnchorOne + 70 * posNegToggle();
+const triAnchorThree = triAnchorTwo + 70 * posNegToggle();
+const triAnchorYOne = randomizeNumber();
+const triAnchorYTwo = triAnchorYOne + 70 * posNegToggle();
+const triAnchorYThree = triAnchorYTwo + 70 * posNegToggle();
 
 //const circleThing = geometricParamsArray[0].circleParams;
 //console.log('MEGACIRCLE', circleThing);
@@ -79,33 +95,44 @@ export const geometricArt = () => {
           ],
         },
       ];
+
       const randomShape = () => {
         const selector = Math.round(Math.random() * shapeArray2D.length);
         const shape = shapeArray2D[selector];
+
         if (shape === 'circle')
           return p5.circle(
-            geometricParamsArray[0].circleParams[0],
-            geometricParamsArray[0].circleParams[1],
-            geometricParamsArray[0].circleParams[2]
+            randomizeNumber(),
+            randomizeNumber(),
+            randomizeSize()
           );
         if (shape === 'rect')
           return p5.rect(
-            geometricParamsArray[1].rectParams[0],
-            geometricParamsArray[1].rectParams[1],
-            geometricParamsArray[1].rectParams[2],
-            geometricParamsArray[1].rectParams[3]
+            randomizeNumber(),
+            randomizeNumber(),
+            randomizeSize(),
+            randomizeSize()
           );
         if (shape === 'triangle')
           return p5.triangle(
-            geometricParamsArray[2].triangleParams[0],
-            geometricParamsArray[2].triangleParams[1],
-            geometricParamsArray[2].triangleParams[2],
-            geometricParamsArray[2].triangleParams[3],
-            geometricParamsArray[2].triangleParams[4],
-            geometricParamsArray[2].triangleParams[5]
+            triAnchorOne,
+            triAnchorYOne,
+            triAnchorTwo,
+            triAnchorYTwo,
+            triAnchorThree,
+            triAnchorYThree
           );
       };
-      randomShape();
+
+      for (let i = 0; i < 500; i++) {
+        p5.fill(p5.random(255), p5.random(255), p5.random(255), p5.random(255));
+
+        // p5.square(p5.random(400), p5.random(400), p5.random(100));
+
+        // p5.circle(p5.random(400), p5.random(400), p5.random(100));
+        randomShape();
+      }
+      //randomShape();
 
       p5.noFill();
       p5.strokeWeight(1);
