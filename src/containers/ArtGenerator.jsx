@@ -2,6 +2,7 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
+import SaveAndGalleryButtons from '../components/artControls/SaveAndGalleryButtons';
 import { randomArt } from '../utils/randomization';
 import downloadCanvas from '../utils/utils';
 import styles from './ArtGenerator.css';
@@ -50,7 +51,7 @@ export default function ArtGenerator() {
           </div>
           <div className={styles.rightColumn}>
             <button onClick={handleRandomClick}>Randomize</button>
-            <button onClick={handleSaveClick}>Save</button>
+            <SaveAndGalleryButtons handleSaveClick={handleSaveClick}/>
           </div>
         </div>
         <div className={styles.lowerBar}>
