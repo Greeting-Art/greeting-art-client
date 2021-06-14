@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 function GalleryList({Contents}) {
     console.log('Contents in Gallery', Contents)
     return (
-        <ul>
+        <ul aria-label='artwork'>
             {Contents.map((artWork) => 
                 <li key={artWork.Key}>
                     <GalleryDetail Key={artWork.Key}/>
