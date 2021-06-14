@@ -11,32 +11,40 @@ function AboutUsComp() {
             <h1 className={styles.teamHeader}>About the Team</h1>
                 <div className={styles.teamMembers}>
                     <div className={styles.memberItem}>
-                        <p>hello this is a test!</p>
-                        {/* <img alt='Sam' src={sam} />
-                        <div>Software Engineer</div>
-                        <a href="linkedinLink"><img src="linkedin.png" alt="linkedIn"/></a>
-                        <a href="githubLink"><img src="github.png" alt="github"/></a> */}
+                        <p>Photo goes here!</p>
+                        {/* <img alt='Sam' src={sam} /> */}
+                        <div>Eion</div>
+                            <p>
+                                <a href="https://www.linkedin.com/in/eionnelson/" target="_blank" rel="noreferrer noopener"><img className={styles.linkedInLogo} src="src/assets/linkedin.png" alt="linkedIn"/></a>
+                                <a href="https://github.com/ecnelson1" target="_blank" rel="noreferrer noopener"><img className={styles.githubLogo} src="src/assets/github.png" alt="github"/></a>
+                            </p>
                     </div>
                     <div className={styles.memberItem}>
-                        <p>hello this is a test!</p>
-                        {/* <img alt='Parker' src={parker} />
-                        <div>Software Engineer</div>
-                        <a href="linkedinLink"><img src="linkedin.png" alt="linkedIn"/></a>
-                        <a href="githubLink"><img src="github.png" alt="github"/></a> */}
+                        <p>Photo goes here!</p>
+                        {/* <img alt='Sam' src={sam} /> */}
+                        <div>Parker</div>
+                            <p>
+                                <a href="https://www.linkedin.com/in/parker-sequeira/" target="_blank" rel="noreferrer noopener"><img className={styles.linkedInLogo} src="src/assets/linkedin.png" alt="linkedIn"/></a>
+                                <a href="https://github.com/phsequeira" target="_blank" rel="noreferrer noopener"><img className={styles.githubLogo} src="src/assets/github.png" alt="github"/></a>
+                            </p>
                     </div>
                     <div className={styles.memberItem}>
-                        <p>hello this is a test!</p>
-                        {/* <img alt='Eion' src={eion} />
-                        <div>Software Engineer</div>
-                        <a href="linkedinLink"><img src="linkedin.png" alt="linkedIn"/></a>
-                        <a href="githubLink"><img src="github.png" alt="github"/></a> */}
+                        <p>Photo goes here!</p>
+                        {/* <img alt='Sam' src={sam} /> */}
+                        <div>Sam</div>
+                            <p>
+                                <a href="https://www.linkedin.com/in/sam-h-gerber/" target="_blank" rel="noreferrer noopener"><img className={styles.linkedInLogo} src="src/assets/linkedin.png" alt="linkedIn"/></a>
+                                <a href="https://github.com/sgerpdx" target="_blank" rel="noreferrer noopener"><img className={styles.githubLogo} src="src/assets/github.png" alt="github"/></a>
+                            </p>
                     </div>
                     <div className={styles.memberItem}>
-                        <p>hello this is a test!</p>
-                        {/* <img alt='Stephen' src={stephen} />
-                        <div>Software Engineer</div>
-                        <a href="linkedinLink"><img src="linkedIn.png" alt="linkedIn"/></a>
-                        <a href="githubLink"><img src="githubIn.png" alt="github"/></a> */}
+                        <p>Photo goes here!</p>
+                        {/* <img alt='Sam' src={sam} /> */}
+                        <div>Stephen</div>
+                            <p>
+                                <a href="https://www.linkedin.com/in/stephentamiesie/" target="_blank" rel="noreferrer noopener"><img className={styles.linkedInLogo} src="src/assets/linkedin.png" alt="linkedIn"/></a>
+                                <a href="https://github.com/stamiesie" target="_blank" rel="noreferrer noopener"><img className={styles.githubLogo} src="src/assets/github.png" alt="github"/></a>
+                            </p>
                     </div>
                 </div>
         </div>
