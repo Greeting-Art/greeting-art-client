@@ -11,7 +11,6 @@ export async function sendToGallery(file) {
 
 export async function getGallery() {
     const gallery = await request.get(`https://limitless-everglades-53305.herokuapp.com/gallery`);
-    console.log(gallery.body.Contents)
     return gallery.body.Contents;
 }
 
