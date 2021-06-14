@@ -1,6 +1,7 @@
 /* eslint-disable indent */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { sendToGallery } from '../../utils/s3-utils';
 
 
 function SaveAndGalleryButtons({ handleSaveClick }) {
@@ -11,7 +12,16 @@ function SaveAndGalleryButtons({ handleSaveClick }) {
         setDisable(true);
     };
 
-    const handleGalleryClick = () => {
+    // const handleGalleryClick = (e) => {
+        const upload = (e) => {
+            const file = e.target.files[0];
+            sendToGallery(file)
+            .then((data) => {
+              console.log('Data Sent', data.location);
+            })
+            .catch((err) => {
+              console.log(err);
+            });
         console.log('Added to gallery');
     };
 
@@ -19,7 +29,9 @@ function SaveAndGalleryButtons({ handleSaveClick }) {
     return (
         <div>
             {disable ?
-            <button onClick={handleGalleryClick}>Add to Gallery?</button> : 
+            <p>Publish to the Gallery!
+            <input type="file" onChange={upload}/>
+            </p> : 
     
             <button onClick={handleClick}>Save</button>}
         </div>
