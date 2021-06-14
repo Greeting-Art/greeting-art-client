@@ -92,6 +92,35 @@ export const geometricArt = () => {
           );
       };
       randomShape();
+
+      p5.strokeWeight(5);
+      p5.point(randomizeRatio(), randomizeRatio());
+      p5.point(randomizeRatio(), randomizeRatio());
+      p5.point(randomizeRatio(), randomizeRatio());
+
+      p5.point(randomizeRatio(), randomizeRatio());
+      p5.point(randomizeRatio(), randomizeRatio());
+      p5.point(randomizeRatio(), randomizeRatio());
+
+      p5.noFill();
+      p5.strokeWeight(1);
+      p5.beginShape();
+      p5.vertex(20, 20);
+      p5.quadraticVertex(
+        randomizeRatio(),
+        randomizeRatio(),
+        randomizeRatio(),
+        randomizeRatio()
+      );
+      p5.quadraticVertex(
+        randomizeRatio(),
+        randomizeRatio(),
+        randomizeRatio(),
+        randomizeRatio()
+      );
+      p5.vertex(80, 60);
+      p5.endShape();
+
       //   p5ShapeVariable;
       //   p5.circle(randomizeRatio(), randomizeRatio(), randomizeRatio());
       //p5.circle(rC1, rC2, rC3);
