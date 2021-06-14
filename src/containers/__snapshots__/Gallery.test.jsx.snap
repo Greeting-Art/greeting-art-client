@@ -1,7 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`art gallery container displays a list of pieces of art 1`] = `
-<button>
-  Send Art as eCard
-</button>
+exports[`art gallery container displays a list of images 1`] = `
+<ul
+  aria-label="artwork"
+>
+  <li>
+    <div>
+      <img
+        src="https://greetingart.s3.us-west-2.amazonaws.com/7c4e1ed9-1ec7-43f6-93a5-12be6d0b3bd4.jpg"
+      />
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`art gallery container displays a loading element 1`] = `
+<h2>
+  loading...
+</h2>
 `;
