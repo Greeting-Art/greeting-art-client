@@ -17,7 +17,7 @@ function GalleryList({Contents}) {
     )
 }
 
-GalleryWalls.propTypes = {
+GalleryList.propTypes = {
    Contents: PropTypes.arrayOf(
     PropTypes.shape({
       Key: PropTypes.string.isRequired,

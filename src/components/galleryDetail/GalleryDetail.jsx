@@ -10,7 +10,7 @@ function GalleryDetail({Key}) {
     )
 }
 
-Art.propTypes = {
+GalleryDetail.propTypes = {
     Key: PropTypes.string.isRequired,
 
 }
