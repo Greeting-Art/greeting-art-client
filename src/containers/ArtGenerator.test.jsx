@@ -29,5 +29,16 @@ describe('random art generation container', () => {
 
     const { container } = render(<App />);
     expect(container.textContent).toMatch('hey');
+
+    const P5Wrapper = function P5Wrapper(props) {
+      var _this = _super.call(this, props) || this;
+      _this.wrapper = null;
+      _this.state = __assign(__assign({}, props), {
+        canvas: null,
+        wrapper: _this.wrapper,
+      });
+      return _this;
+    };
+    expect(P5Wrapper).toMatchSnapshot();
   });
 });
