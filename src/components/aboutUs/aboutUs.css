@@ -1,0 +1,17 @@
+.teamHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+.teamMembers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .memberItem {
+    border: 2px solid black;
+    margin: 10px;
+  }

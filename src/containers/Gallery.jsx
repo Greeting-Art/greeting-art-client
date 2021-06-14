@@ -2,12 +2,16 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Gallery.css';
 import GalleryList from '../components/galleryList/GalleryList';
+import { getGallery } from '../utils/s3-utils';
 
 export default function Gallery() {
   const [loading, setLoading] = useState(true);
+  const [Contents, setContents] = useState([]);
 
   useEffect(() => {
-    setLoading(false);
+    getGallery()
+    .then((Contents) => setContents(Contents))
+    .finally(()=> setLoading(false));
   }, []);
 
   if (loading) return <h2>loading...</h2>;
@@ -16,6 +20,9 @@ export default function Gallery() {
     <main className={styles.galleryPage}>
       <section className={styles.galleryHeader}>
         <h1>Gallery</h1>
+      </section>
+      <section className='gallery-art'>
+        <GalleryList Contents = {Contents}/>
       </section>
 
       <section className={styles.galleryBody}>
@@ -30,7 +37,6 @@ export default function Gallery() {
                 src="https://ca-times.brightspotcdn.com/dims4/default/3212b7e/2147483647/strip/true/crop/3167x2000+0+0/resize/1486x938!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F91%2Fb2%2Fd435345b4a44b49ac1191f05e8d4%2Fla-ca-muppet-show-disney-plus-hensonv2.jpg"
                 width="480"
               /> */}
-              <GalleryList />
             </figure>
           </div>
         </div>

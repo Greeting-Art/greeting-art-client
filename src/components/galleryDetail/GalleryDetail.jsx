@@ -1,15 +1,18 @@
 /* eslint-disable indent */
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-function GalleryDetail(props) {
-  return (
-    <div>
-      <h4>Gallery Detail Test</h4>
-    </div>
-  );
+function GalleryDetail({Key}) {
+    return (
+        <div>
+            <img src={`https://greetingart.s3.us-west-2.amazonaws.com/${Key}`}/>
+        </div>
+    )
 }
 
-GalleryDetail.propTypes = {};
+GalleryDetail.propTypes = {
+    Key: PropTypes.string.isRequired,
 
-export default GalleryDetail;
+}
+
+export default GalleryDetail

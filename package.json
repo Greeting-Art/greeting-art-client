@@ -72,6 +72,7 @@
     "react-images-upload": "^1.2.8",
     "react-p5-wrapper": "^2.4.1",
     "react-router-dom": "^5.2.0",
+    "superagent": "^6.1.0",
     "webpack-dev-server": "^3.11.2"
   }
 }
