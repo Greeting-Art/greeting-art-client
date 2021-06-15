@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import AboutUsComp from '../components/aboutUs/AboutUs';
 import styles from '../components/aboutUs/aboutUs.css';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 export default function AboutUs() {
   const [loading, setLoading] = useState(true);
@@ -10,7 +11,13 @@ export default function AboutUs() {
     setLoading(false);
   }, []);
 
-  if (loading) return <h2>loading...</h2>;
+  //if (loading) return <div className={styles.loader}>Loading...</div>;
+  if (loading)
+    return (
+      <div className={styles.loadingSpinner}>
+        <CircularProgress color="secondary" />
+      </div>
+    );
 
   return (
     // <div>

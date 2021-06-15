@@ -8,6 +8,7 @@ import { randomArt, weirdArt } from '../utils/randomization';
 import { geometricArt } from '../utils/geometrify';
 import downloadCanvas from '../utils/utils';
 import styles from './ArtGenerator.css';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 export default function ArtGenerator() {
   const [loading, setLoading] = useState(true);
@@ -39,7 +40,13 @@ export default function ArtGenerator() {
     downloadCanvas();
   };
 
-  if (loading) return <h2>loading...</h2>;
+  // if (loading) return <h2>loading...</h2>;
+  if (loading)
+    return (
+      <div className={styles.loadingSpinner}>
+        <CircularProgress color="secondary" />
+      </div>
+    );
 
   return (
     <main className={styles.artPage}>
