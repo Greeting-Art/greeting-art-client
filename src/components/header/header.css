@@ -30,6 +30,11 @@ p {
   font-size: 5em;
 }
 
+/* .linkMUI {
+  color: rgb(84, 113, 207);
+  background-color: red;
+} */
+
 /* unneccessary -- the style is coming from the global button style in app.css*/
 /* .iconButtonMUI:active {
   border: none;

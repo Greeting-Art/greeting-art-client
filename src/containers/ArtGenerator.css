@@ -38,6 +38,40 @@
   justify-content: center;
 }
 
+.randomButton,
+.saveButton {
+  background-color: rgb(84, 113, 207);
+  color: white;
+  padding: 8px;
+  border-radius: 0;
+  border: none;
+  font-size: 1em;
+  /* background: none; */
+  box-shadow: none;
+  width: 120px;
+  margin: 4px;
+}
+
+/* cursor hovers over the button */
+.randomButton:hover,
+.saveButton:hover {
+  background-color: rgb(84, 113, 207);
+  color: white;
+  border: double 1px white;
+  /* background: none; */
+  box-shadow: none;
+}
+
+/* mouse click on the button */
+.randomButton:active,
+.saveButton:active {
+  background-color: white;
+  color: rgb(84, 113, 207);
+  border: dotted 1px white;
+  /* background: none; */
+  box-shadow: none;
+}
+
 .lowerBar {
   display: flex;
   flex-direction: row;

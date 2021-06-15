@@ -33,32 +33,13 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
-  background-color: royalblue;
+  background-color: rgb(84, 113, 207);
   color: white;
 }
 
-button {
-  background-color: royalblue;
-  color: white;
-  padding: 8px;
-  border-radius: 0;
-  border: none;
-  font-size: 1em;
-  box-shadow: none;
-  width: 120px;
-  margin: 4px;
-}
-
-button:hover {
-  background-color: royalblue;
-  color: white;
-  border: double 1px white;
-  box-shadow: none;
-}
-
-button:active {
-  background-color: white;
-  color: royalblue;
-  border: dotted 1px white;
-  box-shadow: none;
+.loadingIndicator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

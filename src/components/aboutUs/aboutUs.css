@@ -1,31 +1,79 @@
 .teamHeader {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .teamMembers {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
-  .memberItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid black;
-    margin: 10px;
-  }
+.memberItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  margin: 10px;
+}
 
-  .linkedInLogo {
-    height: 30px;
-    padding: 5px;
-  }
-  
-  .githubLogo {
-    height: 30px;
-    padding: 5px;
-  }
+.linkedInLogo {
+  height: 30px;
+  padding: 5px;
+}
+
+.githubLogo {
+  height: 30px;
+  padding: 5px;
+}
+
+.aboutPage {
+  display: grid;
+  grid-template-rows: 5vh 80vh;
+}
+
+.aboutHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutBody {
+  display: grid;
+  grid-template-rows: 8fr 2fr;
+}
+
+.aboutBar {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftColumn,
+.centerColumn,
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lowerBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingIndicator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

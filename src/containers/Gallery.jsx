@@ -10,19 +10,19 @@ export default function Gallery() {
 
   useEffect(() => {
     getGallery()
-    .then((Contents) => setContents(Contents))
-    .finally(()=> setLoading(false));
+      .then((Contents) => setContents(Contents))
+      .finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <h2>loading...</h2>;
+  if (loading) return <h2 className={styles.loadingIndicator}>loading...</h2>;
 
   return (
     <main className={styles.galleryPage}>
       <section className={styles.galleryHeader}>
         <h1>Gallery</h1>
       </section>
-      <section className='gallery-art'>
-        <GalleryList Contents = {Contents}/>
+      <section className="gallery-art">
+        <GalleryList Contents={Contents} />
       </section>
 
       <section className={styles.galleryBody}>
