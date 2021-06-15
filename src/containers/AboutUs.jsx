@@ -23,17 +23,17 @@ export default function AboutUs() {
       <section className={styles.aboutBody}>
         <div className={styles.aboutBar}>
           <div className={styles.leftColumn}>
-            <p>left</p>
+            <p></p>
           </div>
           <div className={styles.centerColumn}>
             <AboutUsComp />
           </div>
           <div className={styles.rightColumn}>
-            <p>right</p>
+            <p></p>
           </div>
         </div>
         <div className={styles.lowerBar}>
-          <p>lower margin</p>
+          <p></p>
         </div>
       </section>
     </main>
