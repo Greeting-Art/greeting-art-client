@@ -1,5 +1,5 @@
+import logo from '.././assets/3D13-greeting-art-transparent.png'
 function sendMsg(formData, artId) {
-
 
     return {
         method: 'POST',
@@ -167,7 +167,7 @@ function sendMsg(formData, artId) {
             </tbody>
           </table><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="uXsDxMnn1bRMmDcX8NB6rW">
               <tbody><tr>
-                <td style="font-size:6px; line-height:10px; padding:30px 0px 30px 0px;" bgcolor="#000000" valign="top" align="center"><img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:50% !important; width:50%; height:auto !important;" src="https://mc.sendgrid.com/assets/uploads/c4f7e550ea6e1dc8618193f5d31ae9c2aba8f542a5c7b20de199ef019965e396a34356c8181ce010e4a180058e1309fb033edd29246b3820fa2126343c17292c.png" alt="SongRiddle" width="300" data-responsive="true" data-proportionally-constrained="false"></td>
+                <td style="font-size:6px; line-height:10px; padding:30px 0px 30px 0px;" bgcolor="#000000" valign="top" align="center"><img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:50% !important; width:50%; height:auto !important;" src="${logo}" alt="SongRiddle" width="300" data-responsive="true" data-proportionally-constrained="false"></td>
               </tr>
             </tbody></table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="hL6wjQ2qknNd5qDwT1p7Up" data-mc-module-version="2019-10-22">
               <tbody><tr>

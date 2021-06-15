@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ArtGenerator from '../../containers/ArtGenerator';
+import ECardFake from '../../containers/ECardFake';
 import ECard from '../../containers/ECard';
 import Gallery from '../../containers/Gallery';
 import AboutUs from '../../containers/AboutUs';
@@ -16,6 +17,11 @@ export default function App() {
           path="/"
           exact
           render={(routerProps) => <ArtGenerator {...routerProps} />}
+        />
+        <Route
+          path="/ecard"
+          exact
+          render={(routerProps) => <ECardFake {...routerProps} />}
         />
         <Route
           path="/ecard/:id"

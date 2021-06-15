@@ -1,6 +1,5 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router';
 import styles from './ECard.css';
 import { sendMsg } from '../utils/sendGridMessage';
 import { useHistory } from 'react-router-dom';
@@ -9,19 +8,17 @@ export default function ECard() {
   const [loading, setLoading] = useState(true);
   const [disabled, setDisabled] = useState(true);
   const [emailSent, setSent] = useState(true);
-  const [artId, setArtId] = useState('');
+  const [artId, setArtId] = useState('7c4e1ed9-1ec7-43f6-93a5-12be6d0b3bd4.jpg');
   const [formData, setForm] = useState({
     email: '',
     senderName: '',
     message: ''
   });
 
-  let { id } = useParams();
   let history = useHistory();
 
   useEffect(() => {
     setLoading(false);
-    setArtId(id);
   }, []);
 
   useEffect(() => {
@@ -57,14 +54,15 @@ export default function ECard() {
   return (
     <main className={styles.eCardPage}>
       <section className={styles.eCardHeader}>
-        <h1>ECard</h1>
+        <p>If you wish to choose what Greeting Art to send go over to the Gallery Page and hover over your desired art</p>
       </section>
-
+        
       <section className={styles.eCardBody}>
+      
         <div className={styles.eCardDisplay}>
           <figure className={styles.canvasWrapper}>
             <img
-              src={`https://greetingart.s3.us-west-2.amazonaws.com/${id}`}
+              src={`https://greetingart.s3.us-west-2.amazonaws.com/7c4e1ed9-1ec7-43f6-93a5-12be6d0b3bd4.jpg`}
               height="360"
               width="360"
             />
