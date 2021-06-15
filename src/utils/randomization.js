@@ -94,7 +94,7 @@ export const weirdArt = () => {
         );
       }
       p5.textSize(randomizeRatio());
-      p5.text('wave', randomizeColor(), randomizeColor());
+      // p5.text('wave', randomizeColor(), randomizeColor());
     };
   };
   return sketch;

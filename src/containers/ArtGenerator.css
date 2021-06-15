@@ -41,7 +41,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
 }
 
 .canvasWrapper {
@@ -61,7 +61,7 @@
   width: 140px;
   margin: 4px;
   font-family: 'Caveat', cursive;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 /* cursor hovers over the button */
