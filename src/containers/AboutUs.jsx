@@ -10,7 +10,7 @@ export default function AboutUs() {
     setLoading(false);
   }, []);
 
-  if (loading) return <h2 className={styles.loadingIndicator}>loading...</h2>;
+  if (loading) return <h2>loading...</h2>;
 
   return (
     // <div>
