@@ -44,6 +44,10 @@
   justify-content: left;
 }
 
+.canvasWrapper {
+  border: solid 1px white;
+}
+
 .randomButton,
 .saveButton {
   background-color: rgb(84, 113, 207);

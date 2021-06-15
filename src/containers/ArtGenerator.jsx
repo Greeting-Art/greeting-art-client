@@ -26,8 +26,8 @@ export default function ArtGenerator() {
   const functionArray = [randomArt(), weirdArt(), geometricArt()];
 
   const toggleArtSource = () => {
-    const variableAxe = Math.round(Math.random() * functionArray.length) - 1;
-    // console.log('AAAARTizzz', variableAxe);
+    const variableAxe = Math.round(Math.random() * 2);
+    console.log('AAAARTizzz', variableAxe);
     const artSource = functionArray[variableAxe];
 
     return artSource;
