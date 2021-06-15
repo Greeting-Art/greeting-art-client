@@ -2,46 +2,63 @@
 
 /* https://stackoverflow.com/questions/41676054/how-to-add-fonts-to-create-react-app-based-projects */
 
-@font-face {
+/* @font-face {
   font-family: 'ImpactLabel';
   src: local('ImpactLabel-lVYZ'),
     url(../../fonts/ImpactLabel-lVYZ.ttf) format('truetype');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
 }
 
 @font-face {
   font-family: 'ImpactLabel Reverse';
   src: local('ImpactLabel-lVYZ'),
     url(../../fonts/ImpactLabelReversed-nDMR.ttf) format('truetype');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
 }
 
 @font-face {
   font-family: 'Blackpine';
   src: local('Blackpine-4BEVW'),
     url(../../fonts/Blackpine-4BEVW.ttf) format('truetype');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
 }
 
 @font-face {
   font-family: 'ThreeDThirteen';
   src: local('3DThirteenPixelFontsRegular-2dPv'),
     url(../../fonts/3DThirteenPixelFontsRegular-2dPv.ttf) format('truetype');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
 }
 
 @font-face {
   font-family: 'Sagha';
   src: local('Sagha-WyOO4'), url(../../fonts/Sagha-WyOO4.ttf) format('truetype');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
-}
+} */
+
 body {
   font-family: 'Roboto Mono', monospace;
   background-color: royalblue;
   color: white;
+}
+
+button {
+  background-color: royalblue;
+  color: white;
+  padding: 8px;
+  border-radius: 0;
+  border: none;
+  font-size: 1em;
+  box-shadow: none;
+  width: 120px;
+  margin: 4px;
+}
+
+button:hover {
+  background-color: royalblue;
+  color: white;
+  border: double 1px white;
+  box-shadow: none;
+}
+
+button:active {
+  background-color: white;
+  color: royalblue;
+  border: dotted 1px white;
+  box-shadow: none;
 }
