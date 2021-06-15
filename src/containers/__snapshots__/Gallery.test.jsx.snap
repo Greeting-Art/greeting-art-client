@@ -25,11 +25,3 @@ exports[`art gallery container displays a list of images 1`] = `
   </li>
 </ul>
 `;
-
-exports[`art gallery container displays a loading element 1`] = `
-<h2
-  class="loadingIndicator"
->
-  loading...
-</h2>
-`;
