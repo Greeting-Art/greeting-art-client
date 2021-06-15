@@ -54,7 +54,9 @@ function Header() {
         </Menu>
       </div>
       <div className={styles.titleBar}>
-        <p>Greeting Art</p>
+        <figure>
+          <img src="src\assets\3D13-greeting-art-transparent.png" width="500" />
+        </figure>
       </div>
     </section>
   );
