@@ -3,6 +3,17 @@
 /* https://stackoverflow.com/questions/41676054/how-to-add-fonts-to-create-react-app-based-projects */
 
 /* @font-face {
+  font-family: 'ThreeDThirteen';
+  src: local('3DThirteenPixelFontsRegular-2dPv'),
+    url(../../fonts/3DThirteenPixelFontsRegular-2dPv.ttf) format('truetype');
+} */
+
+@font-face {
+  font-family: 'Sagha';
+  src: local('Sagha-WyOO4'), url(../../fonts/Sagha-WyOO4.ttf) format('truetype');
+}
+
+/* @font-face {
   font-family: 'ImpactLabel';
   src: local('ImpactLabel-lVYZ'),
     url(../../fonts/ImpactLabel-lVYZ.ttf) format('truetype');
@@ -10,29 +21,12 @@
 
 @font-face {
   font-family: 'ImpactLabel Reverse';
-  src: local('ImpactLabel-lVYZ'),
+  src: local('ImpactLabelReversed-nDMR'),
     url(../../fonts/ImpactLabelReversed-nDMR.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Blackpine';
-  src: local('Blackpine-4BEVW'),
-    url(../../fonts/Blackpine-4BEVW.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'ThreeDThirteen';
-  src: local('3DThirteenPixelFontsRegular-2dPv'),
-    url(../../fonts/3DThirteenPixelFontsRegular-2dPv.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Sagha';
-  src: local('Sagha-WyOO4'), url(../../fonts/Sagha-WyOO4.ttf) format('truetype');
 } */
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'RobotoMono', monospace;
   background-color: rgb(84, 113, 207);
   color: white;
 }
