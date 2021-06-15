@@ -53,9 +53,12 @@
   justify-content: center;
 }
 
+<<<<<<< HEAD
 li {
   list-style-type: none;
 }
+=======
+>>>>>>> e5f9a75471ddc2a4b70013bfab2310f5f1267c89
 .loadingSpinner {
   display: flex;
   flex-direction: column;
