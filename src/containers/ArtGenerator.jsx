@@ -60,7 +60,9 @@ export default function ArtGenerator() {
             </figure>
           </div>
           <div className={styles.rightColumn}>
-            <button onClick={handleRandomClick}>Randomize</button>
+            <button className={styles.randomButton} onClick={handleRandomClick}>
+              Randomize
+            </button>
             <SaveAndGalleryButtons handleSaveClick={handleSaveClick} />
             {/* <FileUploader /> */}
           </div>
