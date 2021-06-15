@@ -1,10 +1,41 @@
-.linkWrapper {
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+
+@include icon-button.core-styles;
+
+.fullHeader {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.linkBar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: left;
+  font-size: 0.8em;
+  /* background-color: white; */
 }
 
-h3 {
+p {
   margin: 20px;
 }
+
+.titleBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: lighter;
+  font-size: 5em;
+}
+
+/* .linkMUI {
+  color: rgb(84, 113, 207);
+  background-color: red;
+} */
+
+/* unneccessary -- the style is coming from the global button style in app.css*/
+/* .iconButtonMUI:active {
+  border: none;
+} */

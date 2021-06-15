@@ -1,5 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
+/* https://stackoverflow.com/questions/41676054/how-to-add-fonts-to-create-react-app-based-projects */
+
+/* @font-face {
+  font-family: 'ImpactLabel';
+  src: local('ImpactLabel-lVYZ'),
+    url(../../fonts/ImpactLabel-lVYZ.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ImpactLabel Reverse';
+  src: local('ImpactLabel-lVYZ'),
+    url(../../fonts/ImpactLabelReversed-nDMR.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Blackpine';
+  src: local('Blackpine-4BEVW'),
+    url(../../fonts/Blackpine-4BEVW.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ThreeDThirteen';
+  src: local('3DThirteenPixelFontsRegular-2dPv'),
+    url(../../fonts/3DThirteenPixelFontsRegular-2dPv.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Sagha';
+  src: local('Sagha-WyOO4'), url(../../fonts/Sagha-WyOO4.ttf) format('truetype');
+} */
+
 body {
   font-family: 'Roboto Mono', monospace;
+  background-color: rgb(84, 113, 207);
+  color: white;
+}
+
+.loadingIndicator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
