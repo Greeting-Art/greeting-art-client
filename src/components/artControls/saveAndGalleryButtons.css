@@ -9,10 +9,11 @@
   font-size: 1em;
   /* background: none; */
   box-shadow: none;
-  width: 120px;
+  width: 140px;
   margin: 4px;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5em;
 }
-
 /* cursor hovers over the button */
 .randomButton:hover,
 .saveButton:hover,

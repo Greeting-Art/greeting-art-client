@@ -38,10 +38,16 @@ exports[`App component renders App 1`] = `
     <div
       class="titleBar"
     >
-      <p>
-        Greeting Art
-      </p>
+      <figure>
+        <img
+          src="src\\\\assets\\\\3D13-greeting-art-transparent.png"
+          width="640"
+        />
+      </figure>
     </div>
+    <div
+      class="rightHelpBar"
+    />
   </section>
   <div>
     hey

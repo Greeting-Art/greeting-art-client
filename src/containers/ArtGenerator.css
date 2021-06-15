@@ -1,6 +1,6 @@
 .artPage {
   display: grid;
-  grid-template-rows: 15vh 85vh;
+  grid-template-rows: 10vh 70vh;
 }
 
 .artHeader {
@@ -30,12 +30,18 @@
 }
 
 .leftColumn,
-.centerColumn,
-.rightColumn {
+.centerColumn {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
 }
 
 .randomButton,
@@ -48,8 +54,10 @@
   font-size: 1em;
   /* background: none; */
   box-shadow: none;
-  width: 120px;
+  width: 140px;
   margin: 4px;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5em;
 }
 
 /* cursor hovers over the button */
@@ -77,4 +85,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.loadingSpinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/appIcons/splatter.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 50vh;
 }
