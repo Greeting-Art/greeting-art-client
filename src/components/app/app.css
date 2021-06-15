@@ -8,18 +8,18 @@
     url(../../fonts/3DThirteenPixelFontsRegular-2dPv.ttf) format('truetype');
 } */
 
-@font-face {
+/* @font-face {
   font-family: 'Sagha';
-  src: local('Sagha-WyOO4'), url(../../fonts/Sagha-WyOO4.ttf) format('truetype');
+  src: url('../../../public/fonts/Sagha-WyOO4.ttf') format('truetype');
+} */
+
+@font-face {
+  font-family: 'ImpactLabel';
+  src: local('ImpactLabel-lVYZ'),
+    url('../../../public/fonts/ImpactLabel-lVYZ.ttf') format('truetype');
 }
 
 /* @font-face {
-  font-family: 'ImpactLabel';
-  src: local('ImpactLabel-lVYZ'),
-    url(../../fonts/ImpactLabel-lVYZ.ttf) format('truetype');
-}
-
-@font-face {
   font-family: 'ImpactLabel Reverse';
   src: local('ImpactLabelReversed-nDMR'),
     url(../../fonts/ImpactLabelReversed-nDMR.ttf) format('truetype');
