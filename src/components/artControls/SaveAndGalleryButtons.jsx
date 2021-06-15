@@ -1,7 +1,9 @@
+/* eslint-disable max-len */
 /* eslint-disable indent */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { sendToGallery } from '../../utils/s3-utils';
+// import styles from './saveAndGalleryButtons.css';
 
 
 function SaveAndGalleryButtons({ handleSaveClick }) {
@@ -12,7 +14,6 @@ function SaveAndGalleryButtons({ handleSaveClick }) {
         setDisable(true);
     };
 
-    // const handleGalleryClick = (e) => {
         const upload = (e) => {
             const file = e.target.files[0];
             sendToGallery(file)
@@ -20,20 +21,23 @@ function SaveAndGalleryButtons({ handleSaveClick }) {
               console.log('Data Sent', data.location);
             })
             .catch((err) => {
-              console.log(err);
+                console.log(err);
             });
-        console.log('Added to gallery');
+            document.getElementById('uploadedMsg').style.visibility = 'visible';
+            document.getElementById('publishMsg').style.visibility = 'hidden';
+            console.log('Added to gallery');
     };
 
-    
     return (
         <div>
             {disable ?
-            <p>Publish to the Gallery!
-            <input type="file" onChange={upload}/>
-            </p> : 
-    
-            <button onClick={handleClick}>Save</button>}
+                <div>
+                    <p id="publishMsg">Publish to the Gallery!</p>
+                        <input type="file" onChange={upload}/>
+                    <p id="uploadedMsg" style={{ visibility: 'hidden' }}>Uploaded to Gallery!</p>
+                </div> 
+                    :   
+                    <button onClick={handleClick}>Save</button>}
         </div>
 
     );

@@ -12,6 +12,20 @@
   }
 
   .memberItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 2px solid black;
     margin: 10px;
+  }
+
+  .linkedInLogo {
+    height: 30px;
+    padding: 5px;
+  }
+  
+  .githubLogo {
+    height: 30px;
+    padding: 5px;
   }
