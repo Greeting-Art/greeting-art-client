@@ -1,5 +1,6 @@
 .randomButton,
-.saveButton {
+.saveButton,
+.galleryButton {
   background-color: rgb(84, 113, 207);
   color: white;
   padding: 8px;
@@ -15,7 +16,8 @@
 }
 /* cursor hovers over the button */
 .randomButton:hover,
-.saveButton:hover {
+.saveButton:hover,
+.galleryButton:hover {
   background-color: rgb(84, 113, 207);
   color: white;
   border: double 1px white;
@@ -25,7 +27,8 @@
 
 /* mouse click on the button */
 .randomButton:active,
-.saveButton:active {
+.saveButton:active,
+.galleryButton:active {
   background-color: white;
   color: rgb(84, 113, 207);
   border: dotted 1px white;

@@ -3,9 +3,10 @@ import { saveAs } from 'file-saver';
 
 export default function downloadCanvas(){
   const canvas = document.getElementsByClassName('p5Canvas')[0];
-      console.log(canvas);
+      // console.log('download canvas', canvas);
     canvas.toBlob((blob) => {
       saveAs(blob, 'my-random-canvas.jpg');
+      // console.log('BLOB', blob);
     });
 }
 
