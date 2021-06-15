@@ -5,10 +5,22 @@ exports[`art gallery container displays a list of images 1`] = `
   aria-label="artwork"
 >
   <li>
-    <div>
+    <div
+      class="container"
+    >
       <img
+        class="image"
         src="https://greetingart.s3.us-west-2.amazonaws.com/7c4e1ed9-1ec7-43f6-93a5-12be6d0b3bd4.jpg"
       />
+      <div
+        class="middle"
+      >
+        <button
+          class="text"
+        >
+          Send as Ecard
+        </button>
+      </div>
     </div>
   </li>
 </ul>

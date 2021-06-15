@@ -2,6 +2,7 @@
 import React from 'react';
 import GalleryDetail from '../galleryDetail/GalleryDetail';
 import PropTypes from 'prop-types';
+import './galleryList.css'
 
 function GalleryList({Contents}) {
     console.log('Contents in Gallery', Contents)

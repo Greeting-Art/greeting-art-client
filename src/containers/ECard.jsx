@@ -1,5 +1,6 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router';
 import styles from './ECard.css';
 import { sendMsg } from '../utils/sendGridMessage';
 
@@ -7,14 +8,18 @@ export default function ECard() {
   const [loading, setLoading] = useState(true);
   const [disabled, setDisabled] = useState(true);
   const [emailSent, setSent] = useState('');
+  const [artId, setArtId] = useState('');
   const [formData, setForm] = useState({
     email: '',
     senderName: '',
     message: ''
   });
 
+  let { id } = useParams();
+
   useEffect(() => {
     setLoading(false);
+    setArtId(id);
   }, []);
 
   useEffect(() => {
@@ -35,7 +40,7 @@ export default function ECard() {
 
   const handleSumbit = async (e) => {
     e.preventDefault()
-    await fetch('https://limitless-everglades-53305.herokuapp.com/send', sendMsg(formData))
+    await fetch('https://limitless-everglades-53305.herokuapp.com/send', sendMsg(formData, artId))
       .then(res => res.json())
       .then(setSent('You have sent an email successfully'))
   }
@@ -52,7 +57,7 @@ export default function ECard() {
         <div className={styles.eCardDisplay}>
           <figure className={styles.canvasWrapper}>
             <img
-              src="src\assets\placeholder-art.png"
+              src={`https://greetingart.s3.us-west-2.amazonaws.com/${id}`}
               height="360"
               width="360"
             />
