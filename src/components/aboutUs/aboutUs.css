@@ -72,7 +72,22 @@
   justify-content: center;
 }
 
-.loader {
+.loadingSpinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../assets/appIcons/splatter.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 50vh;
+}
+
+/* below is the styling for the spinner from: https://projects.lukehaas.me/css-loaders/ */
+/* the issue with this spinner is that it shakes the page */
+
+/* .loader {
   font-size: 10px;
   margin: 50px auto;
   text-indent: -9999em;
@@ -150,4 +165,4 @@
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
+} */

@@ -8,6 +8,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-size: 2em;
 }
 
 .galleryBody {
@@ -50,4 +51,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.loadingSpinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/appIcons/splatter.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 50vh;
 }
