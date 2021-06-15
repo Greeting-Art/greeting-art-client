@@ -43,9 +43,7 @@ export default function ArtGenerator() {
 
   return (
     <main className={styles.artPage}>
-      <section className={styles.artHeader}>
-        <h1>Art Generator</h1>
-      </section>
+      <section className={styles.artHeader}></section>
 
       <section className={styles.artBody}>
         <div className={styles.controlBar}></div>
@@ -68,7 +66,7 @@ export default function ArtGenerator() {
           </div>
         </div>
         <div className={styles.lowerBar}>
-          <p>lower margin</p>
+          {/* <img src="src\assets\navIcons\idea.png" height="40" /> */}
         </div>
       </section>
     </main>

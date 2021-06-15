@@ -1,6 +1,6 @@
 .artPage {
   display: grid;
-  grid-template-rows: 15vh 85vh;
+  grid-template-rows: 10vh 70vh;
 }
 
 .artHeader {

@@ -55,9 +55,10 @@ function Header() {
       </div>
       <div className={styles.titleBar}>
         <figure>
-          <img src="src\assets\3D13-greeting-art-transparent.png" width="500" />
+          <img src="src\assets\3D13-greeting-art-transparent.png" width="640" />
         </figure>
       </div>
+      <div className={styles.rightHelpBar}></div>
     </section>
   );
 }

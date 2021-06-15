@@ -5,13 +5,15 @@
 
 .fullHeader {
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 8fr 1fr;
+  margin-top: 40px;
+  /* height: 20vh; */
 }
 
 .linkBar {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: left;
   font-size: 0.8em;
   /* background-color: white; */
@@ -28,6 +30,13 @@ p {
   justify-content: center;
   /* font-weight: lighter;
   font-size: 5em; */
+}
+
+.rightHelpBar {
+  display: flex;
+  flex-direction: row;
+  align-items: initial;
+  justify-content: right;
 }
 
 /* .linkMUI {
