@@ -18,7 +18,7 @@ export default function App() {
           render={(routerProps) => <ArtGenerator {...routerProps} />}
         />
         <Route
-          path="/ecard"
+          path="/ecard/:id"
           exact
           render={(routerProps) => <ECard {...routerProps} />}
         />
