@@ -31,7 +31,7 @@ function AboutUsComp() {
                     <div className={styles.memberItem}>
                         <p>Photo goes here!</p>
                         {/* <img alt='Sam' src={sam} /> */}
-                        <div>Sam</div>
+                        <div>Sam G</div>
                             <p>
                                 <a href="https://www.linkedin.com/in/sam-h-gerber/" target="_blank" rel="noreferrer noopener"><img className={styles.linkedInLogo} src="src/assets/linkedin.png" alt="linkedIn"/></a>
                                 <a href="https://github.com/sgerpdx" target="_blank" rel="noreferrer noopener"><img className={styles.githubLogo} src="src/assets/github.png" alt="github"/></a>
