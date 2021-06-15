@@ -1,10 +1,12 @@
 /* eslint-disable max-len */
 /* eslint-disable indent */
 
+const artResolution = 540;
+
 export const randomArt = () => {
   const sketch = (p5) => {
     p5.setup = () => {
-      p5.createCanvas(400, 400);
+      p5.createCanvas(artResolution, artResolution);
       p5.background(255);
       // p5.noStroke();
 
@@ -36,7 +38,7 @@ const randomizeCurve = () => {
 export const weirdArt = () => {
   const sketch = (p5) => {
     p5.setup = () => {
-      p5.createCanvas(400, 400);
+      p5.createCanvas(artResolution, artResolution);
       // p5.noStroke();
       p5.stroke(randomizeColor(), randomizeColor(), randomizeColor());
       // p5.background(randomizeColor(), randomizeColor(), randomizeColor());
