@@ -4,6 +4,7 @@ import { useParams } from 'react-router';
 import styles from './ECard.css';
 import { sendMsg } from '../utils/sendGridMessage';
 import { useHistory } from 'react-router-dom';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 export default function ECard() {
   const [loading, setLoading] = useState(true);
@@ -13,7 +14,7 @@ export default function ECard() {
   const [formData, setForm] = useState({
     email: '',
     senderName: '',
-    message: ''
+    message: '',
   });
 
   let { id } = useParams();
@@ -26,19 +27,18 @@ export default function ECard() {
 
   useEffect(() => {
     if (formData.email.length > 1 && formData.senderName.length > 1) {
-      setDisabled(false)
+      setDisabled(false);
+    } else {
+      setDisabled(true);
     }
-    else {
-      setDisabled(true)
-    }
-  }, [formData.email, formData.senderName])
+  }, [formData.email, formData.senderName]);
 
   const handleForm = (e) => {
     setForm({
       ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const handleSumbit = async (e) => {
     e.preventDefault()
@@ -52,7 +52,13 @@ export default function ECard() {
     history.push('/')
   }
 
-  if (loading) return <h2>loading...</h2>;
+  // if (loading) return <h2>loading...</h2>;
+  if (loading)
+    return (
+      <div className={styles.loadingSpinner}>
+        <CircularProgress color="secondary" />
+      </div>
+    );
 
   return (
     <main className={styles.eCardPage}>
@@ -75,24 +81,26 @@ export default function ECard() {
           <form>
             <label>Recipient Email: </label>
             <input
-              type='email'
-              name='email'
+              type="email"
+              name="email"
               value={formData.email}
               onChange={handleForm}
             />
-            <br /><br />
+            <br />
+            <br />
             <label>Your Name: </label>
             <input
-              type='text'
-              name='senderName'
+              type="text"
+              name="senderName"
               value={formData.senderName}
               onChange={handleForm}
             />
-            <br /><br />
+            <br />
+            <br />
             <label>Message (optional): </label>
             <br />
             <textarea
-              name='message'
+              name="message"
               value={formData.message}
               onChange={handleForm}
             />
@@ -113,7 +121,8 @@ export default function ECard() {
 }
         </div>
       </section>
-      <section className={styles.eCardFooter}>footer
+      <section className={styles.eCardFooter}>
+        footer
         <br />
         
       </section>

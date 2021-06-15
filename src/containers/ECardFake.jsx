@@ -54,7 +54,7 @@ export default function ECard() {
   return (
     <main className={styles.eCardPage}>
       <section className={styles.eCardHeader}>
-        <p>If you wish to choose what Greeting Art to send go over to the Gallery Page and hover over your desired art</p>
+        <h1>If you wish to choose what Greeting Art to send go over to the Gallery Page and hover over your desired art</h1>
       </section>
         
       <section className={styles.eCardBody}>
