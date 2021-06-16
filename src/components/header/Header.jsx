@@ -5,6 +5,10 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
+import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
+import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
+import WbIncandescentIcon from '@material-ui/icons/WbIncandescent';
 import styles from './header.css';
 
 function Header() {
