@@ -1,25 +1,6 @@
 /* eslint-disable max-len */
 /* eslint-disable indent */
-
-export const randomArt = () => {
-  const sketch = (p5) => {
-    p5.setup = () => {
-      p5.createCanvas(400, 400);
-      p5.background(255);
-      // p5.noStroke();
-
-      for (let i = 0; i < 100; i++) {
-        p5.fill(p5.random(255), p5.random(255), p5.random(255), p5.random(255));
-
-        p5.square(p5.random(400), p5.random(400), p5.random(100));
-
-        p5.circle(p5.random(400), p5.random(400), p5.random(100));
-      }
-    };
-    console.log('>>>', sketch);
-  };
-  return sketch;
-};
+const artResolution = 540;
 
 const randomizeRatio = () => {
   return Math.round(Math.random() * 80);
@@ -33,16 +14,50 @@ const randomizeCurve = () => {
   return Math.round(Math.random() * 640);
 };
 
+const randomizeSize = () => {
+  return Math.round(Math.random() * 80);
+};
+
+const posNegToggle = () => {
+  const posNegArray = [1, -1];
+  return posNegArray[Math.round(Math.random() * 1)];
+};
+
+export const randomArt = () => {
+  const sketch = (p5) => {
+    p5.setup = () => {
+      p5.createCanvas(artResolution, artResolution);
+      p5.background(255);
+      //blendMode(MULTIPLY);
+
+      for (let i = 0; i < 100; i++) {
+        p5.fill(p5.random(255), p5.random(255), p5.random(255), p5.random(255));
+
+        p5.square(
+          p5.random(artResolution),
+          p5.random(artResolution),
+          p5.random(100)
+        );
+
+        p5.circle(
+          p5.random(artResolution),
+          p5.random(artResolution),
+          p5.random(100)
+        );
+      }
+    };
+
+    console.log('>>>', sketch);
+  };
+  return sketch;
+};
+
 export const weirdArt = () => {
   const sketch = (p5) => {
     p5.setup = () => {
-      p5.createCanvas(400, 400);
-      // p5.noStroke();
+      p5.createCanvas(artResolution, artResolution);
       p5.stroke(randomizeColor(), randomizeColor(), randomizeColor());
-      // p5.background(randomizeColor(), randomizeColor(), randomizeColor());
       p5.background(randomizeColor(), randomizeColor(), randomizeColor());
-      //p5.erase(randomizeColor(), randomizeColor(), randomizeColor());
-      //p5.arc(50, 50, randomizeRatio(), randomizeRatio(), 2, 5);
       p5.bezier(
         randomizeCurve(),
         randomizeCurve(),
@@ -92,7 +107,7 @@ export const weirdArt = () => {
         );
       }
       p5.textSize(randomizeRatio());
-      p5.text('wave', randomizeColor(), randomizeColor());
+      // p5.text('wave', randomizeColor(), randomizeColor());
     };
   };
   return sketch;
