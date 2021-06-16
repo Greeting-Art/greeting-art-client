@@ -63,7 +63,7 @@ export default function ECard() {
   return (
     <main className={styles.eCardPage}>
       <section className={styles.eCardHeader}>
-        <h1>Send an ECard</h1>
+        <p>Send an E-Card</p>
       </section>
 
       <section className={styles.eCardBody}>
@@ -76,9 +76,9 @@ export default function ECard() {
             />
           </figure>
         </div>
-        <div className={styles.eCardForm}>
+        <div className={styles.eCardFormParent}>
           {emailSent ? (
-          <form>
+          <form className={styles.eCardForm}>
             <label>Recipient Email: </label>
             <input
               type="email"
@@ -86,8 +86,6 @@ export default function ECard() {
               value={formData.email}
               onChange={handleForm}
             />
-            <br />
-            <br />
             <label>Your Name: </label>
             <input
               type="text"
@@ -95,11 +93,9 @@ export default function ECard() {
               value={formData.senderName}
               onChange={handleForm}
             />
-            <br />
-            <br />
             <label>Message (optional): </label>
             <br />
-            <textarea
+            <textarea className={styles.eCardTextArea}
               name="message"
               value={formData.message}
               onChange={handleForm}
@@ -111,8 +107,8 @@ export default function ECard() {
               onClick={handleSumbit}>Send</button>
           </form>
          ) : (
-           <div>
-          <h1>You ecard has been sent</h1>
+           <div className={styles.sentMsg}>
+          <h1>Your E-card has been sent!</h1>
           <button 
             className={styles.buttons}
             onClick={handleReroute}>Create Art</button>
@@ -121,11 +117,11 @@ export default function ECard() {
 }
         </div>
       </section>
-      <section className={styles.eCardFooter}>
+      {/* <section className={styles.eCardFooter}>
         footer
         <br />
         
-      </section>
+      </section> */}
     </main>
   );
 }

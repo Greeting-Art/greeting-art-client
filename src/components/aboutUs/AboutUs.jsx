@@ -7,7 +7,7 @@ import styles from './aboutUs.css';
 function AboutUsComp() {
   return (
     <div className={styles.teamContainer}>
-      <p className={styles.teamHeader}>About the Team</p>
+      <h1 className={styles.teamHeader}>About the Team</h1>
       <div className={styles.teamMembers}>
         <div className={styles.memberItem}>
           <p>Photo goes here!</p>
