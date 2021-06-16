@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 /* eslint-disable indent */
 
-const artResolution = 600;
+const artResolution = 540;
 
 export const randomArt = () => {
   const sketch = (p5) => {

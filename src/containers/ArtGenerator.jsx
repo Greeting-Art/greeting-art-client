@@ -68,7 +68,6 @@ export default function ArtGenerator() {
               Randomize
             </button>
             <SaveAndGalleryButtons handleSaveClick={handleSaveClick} />
-            {/* <FileUploader /> */}
           </div>
         </div>
         <div className={styles.lowerBar}>

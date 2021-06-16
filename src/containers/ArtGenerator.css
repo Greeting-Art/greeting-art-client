@@ -37,6 +37,10 @@
   justify-content: center;
 }
 
+.centerColumn {
+  border: 5px solid black;
+}
+
 .rightColumn {
   display: flex;
   flex-direction: column;
