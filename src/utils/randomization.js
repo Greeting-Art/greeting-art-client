@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 /* eslint-disable indent */
-const artResolution = 540;
+
+const artResolution = 500;
 
 const randomizeRatio = () => {
   return Math.round(Math.random() * 80);

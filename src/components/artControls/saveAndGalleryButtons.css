@@ -1,6 +1,7 @@
 .randomButton,
 .saveButton,
-.galleryButton {
+.galleryButton,
+.galleryLink {
   background-color: rgb(84, 113, 207);
   color: white;
   padding: 8px;
@@ -9,15 +10,16 @@
   font-size: 1em;
   /* background: none; */
   box-shadow: none;
-  width: 140px;
+  width: 145px;
   margin: 4px;
   font-family: 'Caveat', cursive;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 /* cursor hovers over the button */
 .randomButton:hover,
 .saveButton:hover,
-.galleryButton:hover {
+.galleryButton:hover,
+.galleryLink:hover {
   background-color: rgb(84, 113, 207);
   color: white;
   border: double 1px white;
@@ -28,10 +30,15 @@
 /* mouse click on the button */
 .randomButton:active,
 .saveButton:active,
-.galleryButton:active {
+.galleryButton:active,
+.galleryLink:active {
   background-color: white;
   color: rgb(84, 113, 207);
   border: dotted 1px white;
   /* background: none; */
   box-shadow: none;
+}
+
+.gLink {
+  text-decoration: none;
 }

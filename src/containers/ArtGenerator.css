@@ -13,6 +13,7 @@
 .artBody {
   display: grid;
   grid-template-rows: 2fr 6fr 2fr;
+  margin-top: -50px;
 }
 
 .controlBar {
@@ -24,7 +25,7 @@
 
 .artBar {
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   justify-content: center;
 }
@@ -35,6 +36,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.centerColumn {
+  /* border: 3px solid black; */
 }
 
 .rightColumn {
@@ -55,13 +60,12 @@
   padding: 8px;
   border-radius: 0;
   border: none;
-  font-size: 1em;
+  font-size: 1.3em;
   /* background: none; */
   box-shadow: none;
   width: 140px;
   margin: 4px;
   font-family: 'Caveat', cursive;
-  font-size: 1em;
 }
 
 /* cursor hovers over the button */
