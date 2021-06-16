@@ -16,6 +16,15 @@ import styles from './header.css';
 function Header() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [open, setOpen] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleModalClick = () => {
+    setShow(true);
+  };
+
+  const handleModalClose = () => {
+    setShow(false);
+  };
 
   const handleMenuClick = (e) => {
     setAnchorEl(e.currentTarget);
@@ -85,7 +94,7 @@ function Header() {
           aria-label="help"
           aria-controls="help-menu"
           aria-haspopup="true"
-          onClick={handleHelpOpen}
+          onClick={handleModalClick}
           className="iconButtonMUI"
         >
           <EmojiObjectsIcon fontSize="large" />
@@ -97,14 +106,16 @@ function Header() {
           </nav>
         </div> */}
 
-        <Modal
+        {/* <Modal
           open={open}
           onClose={handleHelpClose}
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
         >
           <HelpModal />
-        </Modal>
+        </Modal> */}
+
+        <HelpModal show={show} onClose={handleModalClose} />
       </div>
     </section>
   );
