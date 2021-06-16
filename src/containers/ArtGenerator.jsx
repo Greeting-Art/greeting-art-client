@@ -54,14 +54,13 @@ export default function ArtGenerator() {
 
       <section className={styles.artBody}>
         <div className={styles.controlBar}></div>
-        <div className={styles.artBar}>
-          <div className={styles.leftColumn}>
-            <p>left column</p>
-          </div>
+          <div className={styles.artBar}>
+            <div className={styles.leftColumn}>
+              <p>left column</p>
+            </div>
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>
               <P5Wrapper sketch={toggleArtSource()} />
-              {/* <img src="https://i.ytimg.com/vi/PXye-6_ZB1w/hqdefault.jpg" /> */}
             </figure>
           </div>
           <div className={styles.rightColumn}>

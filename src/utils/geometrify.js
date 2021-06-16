@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 /* eslint-disable indent */
-const artResolution = 400;
+const artResolution = 600;
 
 const randomizeColor = () => {
   return Math.round(Math.random() * 254);
