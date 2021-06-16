@@ -59,7 +59,7 @@ export default function ECard() {
   return (
     <main className={styles.eCardPage}>
       <section className={styles.eCardHeader}>
-        <h1>ECard</h1>
+        <h1>Send an ECard</h1>
       </section>
 
       <section className={styles.eCardBody}>
@@ -72,39 +72,41 @@ export default function ECard() {
             />
           </figure>
         </div>
-        <div className={styles.eCardForm}>
-          <form>
-            <label>Recipient Email: </label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleForm}
-            />
-            <br />
-            <br />
-            <label>Your Name: </label>
-            <input
-              type="text"
-              name="senderName"
-              value={formData.senderName}
-              onChange={handleForm}
-            />
-            <br />
-            <br />
-            <label>Message (optional): </label>
-            <br />
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleForm}
-            />
-            <br />
-            <br />
-            <button disabled={disabled} onClick={handleSumbit}>
+        <div className={styles.formParent}>
+          <div className={styles.eCardForm}>
+            <form>
+              <label>Recipient Email: </label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleForm}
+              />
+              <br />
+              <br />
+              <label>Your Name: </label>
+              <input
+                type="text"
+                name="senderName"
+                value={formData.senderName}
+                onChange={handleForm}
+              />
+              <br />
+              <br />
+              <label>Message (optional): </label>
+              <br />
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleForm}
+              />
+              <br />
+              <br />
+              <button disabled={disabled} className={styles.eCardButton} onClick={handleSumbit}>
               Send
-            </button>
-          </form>
+              </button>
+            </form>
+          </div>
         </div>
       </section>
       <section className={styles.eCardFooter}>

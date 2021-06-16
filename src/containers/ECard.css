@@ -40,11 +40,41 @@
   font-size: 1.2em;
 }
 
+.eCardButton {
+  background-color: rgb(84, 113, 207);
+  color: white;
+  padding: 8px;
+  border-radius: 0;
+  border: none;
+  /* background: none; */
+  box-shadow: none;
+  width: 145px;
+  /* margin: 4px; */
+  font-family: 'Caveat', cursive;
+  font-size: 1.3em;
+}
+
 .eCardFooter {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.eCardButton:hover {
+  background-color: rgb(84, 113, 207);
+  color: white;
+  border: 1px solid  white;
+  /* background: none; */
+  box-shadow: none;
+}
+
+.eCardButton:active {
+  background-color: white;
+  color: rgb(84, 113, 207);
+  border: dotted 1px white;
+  /* background: none; */
+  box-shadow: none;
 }
 
 .loadingSpinner {
