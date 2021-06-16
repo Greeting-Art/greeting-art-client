@@ -5,11 +5,11 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
-import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
+// import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
+// import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
-import WbIncandescentIcon from '@material-ui/icons/WbIncandescent';
-import Modal from '@material-ui/core/Modal';
+// import WbIncandescentIcon from '@material-ui/icons/WbIncandescent';
+//import Modal from '@material-ui/core/Modal';
 import HelpModal from './HelpModal';
 import styles from './header.css';
 
@@ -30,20 +30,8 @@ function Header() {
     setAnchorEl(e.currentTarget);
   };
 
-  const handleHelpClick = (e) => {
-    setAnchorEl(e.currentTarget);
-  };
-
   const handleClose = () => {
     setAnchorEl(null);
-  };
-
-  const handleHelpOpen = () => {
-    setOpen(true);
-  };
-
-  const handleHelpClose = () => {
-    setOpen(false);
   };
 
   return (
@@ -99,22 +87,6 @@ function Header() {
         >
           <EmojiObjectsIcon fontSize="large" />
         </IconButton>
-        {/* <div id="helpModal" className={styles.helpModal}>
-          <nav className={styles.modalContent}>
-            <span className={styles.closeDown}>&times;</span>
-            <p>Hey there!</p>
-          </nav>
-        </div> */}
-
-        {/* <Modal
-          open={open}
-          onClose={handleHelpClose}
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
-        >
-          <HelpModal />
-        </Modal> */}
-
         <HelpModal show={show} onClose={handleModalClose} />
       </div>
     </section>

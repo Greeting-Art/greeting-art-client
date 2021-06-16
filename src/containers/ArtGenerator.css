@@ -75,7 +75,7 @@
   color: white;
   border: double 1px white;
   /* background: none; */
-  box-shadow: none;
+  /* box-shadow: none; */
 }
 
 /* mouse click on the button */
@@ -85,7 +85,7 @@
   color: rgb(84, 113, 207);
   border: dotted 1px white;
   /* background: none; */
-  box-shadow: none;
+  /* box-shadow: none; */
 }
 
 .lowerBar {
