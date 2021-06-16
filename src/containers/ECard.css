@@ -40,7 +40,7 @@
   font-size: 1.2em;
 }
 
-.eCardButton {
+.buttons {
   background-color: rgb(84, 113, 207);
   color: white;
   padding: 8px;
@@ -48,10 +48,10 @@
   border: none;
   /* background: none; */
   box-shadow: none;
-  width: 145px;
+  /* width: 145px; */
   /* margin: 4px; */
-  font-family: 'Caveat', cursive;
-  font-size: 1.3em;
+  font-family: 'RobotoMono', monospace;
+  font-size: 1.2em;
 }
 
 .eCardFooter {
@@ -61,18 +61,20 @@
   justify-content: center;
 }
 
-.eCardButton:hover {
+.buttons:hover {
   background-color: rgb(84, 113, 207);
   color: white;
   border: 1px solid  white;
+  margin: -1px;
   /* background: none; */
   box-shadow: none;
 }
 
-.eCardButton:active {
+.buttons:active {
   background-color: white;
   color: rgb(84, 113, 207);
   border: dotted 1px white;
+  margin: -1px;
   /* background: none; */
   box-shadow: none;
 }
