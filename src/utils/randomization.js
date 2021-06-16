@@ -19,6 +19,27 @@ const randomizeSize = () => {
   return Math.round(Math.random() * 80);
 };
 
+export const blankP5Canvas = () => {
+  const sketch = (p5) => {
+    let c = p5.color(84, 113, 207);
+    const centerCoords = artResolution / 2;
+    p5.setup = () => {
+      p5.createCanvas(artResolution, artResolution);
+      p5.background(c);
+      p5.noLoop();
+    };
+    p5.draw = () => {
+      p5.background(c);
+      p5.textSize(36);
+      p5.textAlign(p5.CENTER);
+      p5.textFont('Caveat');
+      p5.fill('white');
+      p5.text('wave', centerCoords, centerCoords);
+    };
+  };
+  return sketch;
+};
+
 export const randomArt = () => {
   const sketch = (p5) => {
     p5.setup = () => {

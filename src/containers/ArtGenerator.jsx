@@ -2,8 +2,9 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
+import ArtCanvas from '../components/artCanvas/ArtCanvas';
 import SaveAndGalleryButtons from '../components/artControls/SaveAndGalleryButtons';
-import { randomArt, weirdArt } from '../utils/randomization';
+import { randomArt, weirdArt, blankP5Canvas } from '../utils/randomization';
 import { geometricArt, stealthyArt, spaceyArt } from '../utils/geometrify';
 import downloadCanvas from '../utils/utils';
 import styles from './ArtGenerator.css';
@@ -12,6 +13,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 export default function ArtGenerator() {
   const [loading, setLoading] = useState(true);
   const [counter, setCounter] = useState(0);
+  const [yetRendered, setYetRendered] = useState(false);
 
   useEffect(() => {
     setLoading(false);
@@ -47,6 +49,7 @@ export default function ArtGenerator() {
 
   const handleRandomClick = () => {
     setCounter(counter + 1);
+    setYetRendered(true);
     console.log('>>>', counter);
   };
 
@@ -75,7 +78,11 @@ export default function ArtGenerator() {
           </div>
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>
-              <P5Wrapper sketch={toggleArtSource()} />
+              {!yetRendered ? (
+                <P5Wrapper sketch={blankP5Canvas()} />
+              ) : (
+                <P5Wrapper sketch={toggleArtSource()} />
+              )}
             </figure>
           </div>
           <div className={styles.rightColumn}>
