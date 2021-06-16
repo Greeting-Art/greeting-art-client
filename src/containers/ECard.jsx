@@ -63,7 +63,7 @@ export default function ECard() {
   return (
     <main className={styles.eCardPage}>
       <section className={styles.eCardHeader}>
-        <h1>ECard</h1>
+        <h1>Send an ECard</h1>
       </section>
 
       <section className={styles.eCardBody}>
