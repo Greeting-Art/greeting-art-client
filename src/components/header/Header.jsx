@@ -10,6 +10,7 @@ import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
 import WbIncandescentIcon from '@material-ui/icons/WbIncandescent';
 import Modal from '@material-ui/core/Modal';
+import HelpModal from './HelpModal';
 import styles from './header.css';
 
 function Header() {
@@ -79,6 +80,7 @@ function Header() {
       <div className={styles.rightHelpBar}>
         <IconButton
           // edge="start"
+          id="helpButton"
           color="inherit"
           aria-label="help"
           aria-controls="help-menu"
@@ -86,15 +88,22 @@ function Header() {
           onClick={handleHelpOpen}
           className="iconButtonMUI"
         >
-          <HelpOutlineIcon fontSize="large" />
+          <EmojiObjectsIcon fontSize="large" />
         </IconButton>
+        {/* <div id="helpModal" className={styles.helpModal}>
+          <nav className={styles.modalContent}>
+            <span className={styles.closeDown}>&times;</span>
+            <p>Hey there!</p>
+          </nav>
+        </div> */}
+
         <Modal
           open={open}
           onClose={handleHelpClose}
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
         >
-          <p>Hey!</p>
+          <HelpModal />
         </Modal>
       </div>
     </section>
