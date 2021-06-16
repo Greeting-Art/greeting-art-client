@@ -41,7 +41,7 @@ export default function HelpModal({ show, onClose }) {
             <ul>
               <li>select any art from the Gallery</li>
               <li>add an email address, day/time and a message</li>
-              <li>send away</li>
+              <li>send away!</li>
             </ul>
           </p>
         </div>
