@@ -32,6 +32,7 @@ export default function ArtGenerator() {
     const variableAxe = Math.round(Math.random() * 3);
     console.log('VVVMMMAAA', variableAxe);
     const artSource = functionArray[variableAxe];
+
     return artSource;
   };
 
@@ -60,7 +61,8 @@ export default function ArtGenerator() {
         <div className={styles.controlBar}></div>
         <div className={styles.artBar}>
           <div className={styles.leftColumn}>
-            <p>left column</p>
+            {/* <img src="src\assets\appIcons\speak-beautiful.png" height="100" />
+            <img src="src\assets\appIcons\gif-blob-one.gif" /> */}
           </div>
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>
