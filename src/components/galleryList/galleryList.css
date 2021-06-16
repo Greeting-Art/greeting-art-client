@@ -1,0 +1,8 @@
+li {
+    width: fit-content;
+    list-style-type: none;
+  float: right;
+  padding-right: 25px;
+  align-items: center;
+
+}
