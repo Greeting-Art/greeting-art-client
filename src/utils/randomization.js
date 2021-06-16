@@ -23,18 +23,18 @@ export const blankP5Canvas = () => {
   const sketch = (p5) => {
     let c = p5.color(84, 113, 207);
     const centerCoords = artResolution / 2;
+    p5.preload = () => {};
     p5.setup = () => {
       p5.createCanvas(artResolution, artResolution);
-      p5.background(c);
       p5.noLoop();
     };
     p5.draw = () => {
       p5.background(c);
-      p5.textSize(36);
+      p5.textSize(48);
       p5.textAlign(p5.CENTER);
       p5.textFont('Caveat');
       p5.fill('white');
-      p5.text('wave', centerCoords, centerCoords);
+      p5.text('🖌', centerCoords, centerCoords);
     };
   };
   return sketch;
@@ -133,7 +133,6 @@ export const weirdArt = () => {
         );
       }
       p5.textSize(randomizeRatio());
-      // p5.text('wave', randomizeColor(), randomizeColor());
     };
   };
   return sketch;
