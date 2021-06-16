@@ -70,7 +70,6 @@ function Header() {
           </MenuItem>
         </Menu>
       </div>
-<<<<<<< HEAD
       <Link to={'/'}>
         <div className={styles.titleBar}>
           <figure>
@@ -79,7 +78,6 @@ function Header() {
         </div>
       </Link>
       <div className={styles.rightHelpBar}></div>
-=======
       <div className={styles.titleBar}>
         <figure>
           <img src="src\assets\3D13-greeting-art-transparent.png" width="640" />
@@ -100,7 +98,6 @@ function Header() {
         </IconButton>
         <HelpModal show={show} onClose={handleModalClose} />
       </div>
->>>>>>> ba55d325d36e8f8d9004bbbd5db3c4fa56353bae
     </section>
   );
 }
