@@ -17,7 +17,7 @@ function SaveAndGalleryButtons({ handleSaveClick }) {
 
   const uploadClick = () => {
     const canvas = document.getElementsByClassName('p5Canvas')[0];
-    console.log('Upload canvas', canvas);
+    // console.log('Upload canvas', canvas);
 
     canvas.toBlob((blob) => {
       

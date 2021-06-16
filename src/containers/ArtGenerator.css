@@ -49,9 +49,13 @@
   justify-content: center;
 }
 
-.canvasWrapper {
+canvas {
   border: solid 1px white;
 }
+
+/* .canvasWrapper {
+  border: solid 1px white;
+} */
 
 .randomButton,
 .saveButton {
