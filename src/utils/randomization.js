@@ -28,18 +28,26 @@ export const randomArt = () => {
     p5.setup = () => {
       p5.createCanvas(artResolution, artResolution);
       p5.background(255);
-      //blendMode(MULTIPLY);
+      const density = randomizeSize();
 
-      for (let i = 0; i < 100; i++) {
-        p5.fill(p5.random(255), p5.random(255), p5.random(255), p5.random(255));
-
+      for (let i = 0; i < density; i++) {
+        //
+        p5.fill('yellow');
         p5.square(
           p5.random(artResolution),
           p5.random(artResolution),
           p5.random(100)
         );
 
+        p5.fill('red');
         p5.circle(
+          p5.random(artResolution),
+          p5.random(artResolution),
+          p5.random(100)
+        );
+
+        p5.fill('blue');
+        p5.square(
           p5.random(artResolution),
           p5.random(artResolution),
           p5.random(100)

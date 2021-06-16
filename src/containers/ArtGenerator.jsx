@@ -5,7 +5,7 @@ import P5Wrapper from 'react-p5-wrapper';
 import SaveAndGalleryButtons from '../components/artControls/SaveAndGalleryButtons';
 import FileUploader from '../components/fileUploader/FileUploader';
 import { randomArt, weirdArt } from '../utils/randomization';
-import { geometricArt, stealthyArt } from '../utils/geometrify';
+import { geometricArt, stealthyArt, spaceyArt } from '../utils/geometrify';
 import downloadCanvas from '../utils/utils';
 import styles from './ArtGenerator.css';
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -26,10 +26,11 @@ export default function ArtGenerator() {
     weirdArt(),
     geometricArt(),
     stealthyArt(),
+    spaceyArt(),
   ];
 
   const toggleArtSource = () => {
-    const variableAxe = Math.round(Math.random() * 3);
+    const variableAxe = Math.round(Math.random() * 4);
     console.log('VVVMMMAAA', variableAxe);
     const artSource = functionArray[variableAxe];
 
