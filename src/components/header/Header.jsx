@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 /* eslint-disable indent */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';

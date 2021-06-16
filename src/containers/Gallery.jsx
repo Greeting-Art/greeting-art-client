@@ -30,29 +30,12 @@ export default function Gallery() {
       <section className={styles.galleryHeader}>
         <p>Gallery</p>
       </section>
-      <section className="gallery-art">
-        <GalleryList Contents={Contents} />
-      </section>
-
       <section className={styles.galleryBody}>
-        <div className={styles.controlBar}>
-          <button>← Page</button>
-          <button>Page →</button>
-        </div>
-        <div className={styles.galleryBar}>
-          <div className={styles.centerColumn}>
-            <figure className={styles.canvasWrapper}>
-              {/* <img
-                src="https://ca-times.brightspotcdn.com/dims4/default/3212b7e/2147483647/strip/true/crop/3167x2000+0+0/resize/1486x938!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F91%2Fb2%2Fd435345b4a44b49ac1191f05e8d4%2Fla-ca-muppet-show-disney-plus-hensonv2.jpg"
-                width="480"
-              /> */}
-            </figure>
-          </div>
-        </div>
+        <GalleryList Contents={Contents} />
+        </section>
         <div className={styles.lowerBar}>
-          <button>Send Art as eCard</button>
         </div>
-      </section>
+      
     </main>
   );
 }

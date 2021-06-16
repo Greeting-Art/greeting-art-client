@@ -1,44 +1,41 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router';
 import styles from './ECard.css';
 import { sendMsg } from '../utils/sendGridMessage';
 import { useHistory } from 'react-router-dom';
-import CircularProgress from '@material-ui/core/CircularProgress';
 
 export default function ECard() {
   const [loading, setLoading] = useState(true);
   const [disabled, setDisabled] = useState(true);
   const [emailSent, setSent] = useState(true);
-  const [artId, setArtId] = useState('');
+  const [artId, setArtId] = useState('7c4e1ed9-1ec7-43f6-93a5-12be6d0b3bd4.jpg');
   const [formData, setForm] = useState({
     email: '',
     senderName: '',
-    message: '',
+    message: ''
   });
 
-  let { id } = useParams();
   let history = useHistory();
 
   useEffect(() => {
     setLoading(false);
-    setArtId(id);
   }, []);
 
   useEffect(() => {
     if (formData.email.length > 1 && formData.senderName.length > 1) {
-      setDisabled(false);
-    } else {
-      setDisabled(true);
+      setDisabled(false)
     }
-  }, [formData.email, formData.senderName]);
+    else {
+      setDisabled(true)
+    }
+  }, [formData.email, formData.senderName])
 
   const handleForm = (e) => {
     setForm({
       ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+      [e.target.name]: e.target.value
+    })
+  }
 
   const handleSumbit = async (e) => {
     e.preventDefault()
@@ -52,27 +49,22 @@ export default function ECard() {
     history.push('/')
   }
 
-  // if (loading) return <h2>loading...</h2>;
-  if (loading)
-    return (
-      <div className={styles.loadingSpinner}>
-        <CircularProgress color="secondary" />
-      </div>
-    );
+  if (loading) return <h2>loading...</h2>;
 
   return (
     <main className={styles.eCardPage}>
       <section className={styles.eCardHeader}>
-        <h1>Send an ECard</h1>
+        <h1>If you wish to choose what Greeting Art to send go over to the Gallery Page and hover over your desired art</h1>
       </section>
-
+        
       <section className={styles.eCardBody}>
+      
         <div className={styles.eCardDisplay}>
           <figure className={styles.canvasWrapper}>
             <img
-              src={`https://greetingart.s3.us-west-2.amazonaws.com/${id}`}
-              height="500"
-              width="500"
+              src={`https://greetingart.s3.us-west-2.amazonaws.com/7c4e1ed9-1ec7-43f6-93a5-12be6d0b3bd4.jpg`}
+              height="360"
+              width="360"
             />
           </figure>
         </div>
@@ -81,26 +73,24 @@ export default function ECard() {
           <form>
             <label>Recipient Email: </label>
             <input
-              type="email"
-              name="email"
+              type='email'
+              name='email'
               value={formData.email}
               onChange={handleForm}
             />
-            <br />
-            <br />
+            <br /><br />
             <label>Your Name: </label>
             <input
-              type="text"
-              name="senderName"
+              type='text'
+              name='senderName'
               value={formData.senderName}
               onChange={handleForm}
             />
-            <br />
-            <br />
+            <br /><br />
             <label>Message (optional): </label>
             <br />
             <textarea
-              name="message"
+              name='message'
               value={formData.message}
               onChange={handleForm}
             />
@@ -121,8 +111,7 @@ export default function ECard() {
 }
         </div>
       </section>
-      <section className={styles.eCardFooter}>
-        footer
+      <section className={styles.eCardFooter}>footer
         <br />
         
       </section>
