@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 
-import { InsertChartRounded } from '@material-ui/icons';
+//import { InsertChartRounded } from '@material-ui/icons';
 
 /* eslint-disable indent */
 const artResolution = 500;

@@ -28,8 +28,8 @@
 } */
 
 body {
-  /* font-family: 'RobotoMono', monospace; */
-  font-family: 'Caveat', cursive;
+  font-family: 'RobotoMono', monospace;
+  /* font-family: 'Caveat', cursive; */
   background-color: rgb(84, 113, 207);
   font-size: 1.2em;
   color: white;
