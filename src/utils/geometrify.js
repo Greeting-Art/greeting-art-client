@@ -18,15 +18,10 @@ const randomizeSize = () => {
   return Math.round(Math.random() * 80);
 };
 
-// const shapeArray2D = ['circle', 'rect', 'triangle'];
-// const curveArray = ['bezier', 'vertex', 'curve'];
-
 const posNegToggle = () => {
   const posNegArray = [1, -1];
   return posNegArray[Math.round(Math.random() * 1)];
 };
-
-// p5.arc(50, 50, randomizeRatio(), randomizeRatio(), 2, 5);
 
 export const geometricArt = () => {
   const sketch = (p5) => {

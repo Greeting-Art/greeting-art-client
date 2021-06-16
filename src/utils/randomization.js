@@ -18,11 +18,6 @@ const randomizeSize = () => {
   return Math.round(Math.random() * 80);
 };
 
-const posNegToggle = () => {
-  const posNegArray = [1, -1];
-  return posNegArray[Math.round(Math.random() * 1)];
-};
-
 export const randomArt = () => {
   const sketch = (p5) => {
     p5.setup = () => {
