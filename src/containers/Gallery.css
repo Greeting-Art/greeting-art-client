@@ -53,9 +53,10 @@
   justify-content: center;
 }
 
-li {
+.galleryLI {
   list-style-type: none;
 }
+
 .loadingSpinner {
   display: flex;
   flex-direction: column;

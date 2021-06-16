@@ -1,10 +1,10 @@
-li {
-    list-style-type: none;
-
+.galleryLI {
+  list-style-type: none;
 }
-ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
-    align-items: center;
+
+.galleryUL {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  align-items: center;
 }
