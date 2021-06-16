@@ -21,13 +21,15 @@ export default function ArtGenerator() {
     console.log('***', counter);
   }, [counter]);
 
-  const artwork = randomArt();
+  //const artwork = randomArt();
 
   const functionArray = [randomArt(), weirdArt(), geometricArt()];
 
   const toggleArtSource = () => {
-    const variableAxe = Math.round(Math.random() * functionArray.length);
+    const variableAxe = Math.round(Math.random() * 2);
+    console.log('AAAARTizzz', variableAxe);
     const artSource = functionArray[variableAxe];
+
     return artSource;
   };
 
@@ -56,7 +58,8 @@ export default function ArtGenerator() {
         <div className={styles.controlBar}></div>
         <div className={styles.artBar}>
           <div className={styles.leftColumn}>
-            <p>left column</p>
+            {/* <img src="src\assets\appIcons\speak-beautiful.png" height="100" />
+            <img src="src\assets\appIcons\gif-blob-one.gif" /> */}
           </div>
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>
