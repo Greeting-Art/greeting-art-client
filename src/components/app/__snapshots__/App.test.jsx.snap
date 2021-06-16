@@ -43,7 +43,7 @@ exports[`App component renders App 1`] = `
       >
         <figure>
           <img
-            src="src\\\\assets\\\\3D13-greeting-art-transparent.png"
+            src="/path/image"
             width="640"
           />
         </figure>

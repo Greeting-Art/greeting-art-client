@@ -3,8 +3,11 @@
 exports[`art gallery container displays a list of images 1`] = `
 <ul
   aria-label="artwork"
+  class="galleryUL"
 >
-  <li>
+  <li
+    class="galleryLI"
+  >
     <div
       class="container"
     >
