@@ -1,8 +1,10 @@
 li {
-    width: fit-content;
     list-style-type: none;
-  float: right;
-  padding-right: 25px;
-  align-items: center;
 
+}
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    align-items: center;
 }

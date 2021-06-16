@@ -28,9 +28,6 @@ export default function Gallery() {
       <section className={styles.galleryHeader}>
         <p>Gallery</p>
       </section>
-      <section className="gallery-art">
-        
-      </section>
       <section className={styles.galleryBody}>
         <GalleryList Contents={Contents} />
         </section>

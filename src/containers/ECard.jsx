@@ -71,8 +71,8 @@ export default function ECard() {
           <figure className={styles.canvasWrapper}>
             <img
               src={`https://greetingart.s3.us-west-2.amazonaws.com/${id}`}
-              height="360"
-              width="360"
+              height="500"
+              width="500"
             />
           </figure>
         </div>
