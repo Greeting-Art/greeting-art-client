@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
 import SaveAndGalleryButtons from '../components/artControls/SaveAndGalleryButtons';
-import FileUploader from '../components/fileUploader/FileUploader';
 import { randomArt, weirdArt } from '../utils/randomization';
 import { geometricArt } from '../utils/geometrify';
 import downloadCanvas from '../utils/utils';
@@ -21,13 +20,15 @@ export default function ArtGenerator() {
     console.log('***', counter);
   }, [counter]);
 
-  const artwork = randomArt();
+  //const artwork = randomArt();
 
   const functionArray = [randomArt(), weirdArt(), geometricArt()];
 
   const toggleArtSource = () => {
-    const variableAxe = Math.round(Math.random() * functionArray.length);
+    const variableAxe = Math.round(Math.random() * 2);
+    console.log('AAAARTizzz', variableAxe);
     const artSource = functionArray[variableAxe];
+
     return artSource;
   };
 
@@ -54,10 +55,11 @@ export default function ArtGenerator() {
 
       <section className={styles.artBody}>
         <div className={styles.controlBar}></div>
-          <div className={styles.artBar}>
-            <div className={styles.leftColumn}>
-              <p>left column</p>
-            </div>
+        <div className={styles.artBar}>
+          <div className={styles.leftColumn}>
+            {/* <img src="src\assets\appIcons\speak-beautiful.png" height="100" />
+            <img src="src\assets\appIcons\gif-blob-one.gif" /> */}
+          </div>
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>
               <P5Wrapper sketch={toggleArtSource()} />

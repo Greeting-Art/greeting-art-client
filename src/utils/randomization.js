@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 /* eslint-disable indent */
 
-const artResolution = 540;
+const artResolution = 500;
 
 export const randomArt = () => {
   const sketch = (p5) => {
@@ -94,7 +94,7 @@ export const weirdArt = () => {
         );
       }
       p5.textSize(randomizeRatio());
-      p5.text('wave', randomizeColor(), randomizeColor());
+      // p5.text('wave', randomizeColor(), randomizeColor());
     };
   };
   return sketch;
