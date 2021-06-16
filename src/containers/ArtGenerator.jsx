@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
 import SaveAndGalleryButtons from '../components/artControls/SaveAndGalleryButtons';
-import FileUploader from '../components/fileUploader/FileUploader';
 import { randomArt, weirdArt } from '../utils/randomization';
 import { geometricArt } from '../utils/geometrify';
 import downloadCanvas from '../utils/utils';
@@ -64,7 +63,6 @@ export default function ArtGenerator() {
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>
               <P5Wrapper sketch={toggleArtSource()} />
-              {/* <img src="https://i.ytimg.com/vi/PXye-6_ZB1w/hqdefault.jpg" /> */}
             </figure>
           </div>
           <div className={styles.rightColumn}>
@@ -72,7 +70,6 @@ export default function ArtGenerator() {
               Randomize
             </button>
             <SaveAndGalleryButtons handleSaveClick={handleSaveClick} />
-            {/* <FileUploader /> */}
           </div>
         </div>
         <div className={styles.lowerBar}>
