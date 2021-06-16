@@ -14,8 +14,6 @@ export default function ArtGenerator() {
   const [loading, setLoading] = useState(true);
   const [counter, setCounter] = useState(0);
 
-  console.log('P5', P5Wrapper);
-
   useEffect(() => {
     setLoading(false);
     console.log('***', counter);
@@ -30,11 +28,22 @@ export default function ArtGenerator() {
   ];
 
   const toggleArtSource = () => {
-    const variableAxe = Math.round(Math.random() * 4);
-    console.log('VVVMMMAAA', variableAxe);
-    const artSource = functionArray[variableAxe];
-
-    return artSource;
+    let variableAxe = Math.round(Math.random() * 4);
+    if (counter % 2 !== 0) {
+      console.log('VVVMMMAAA', variableAxe);
+      const artSource = functionArray[variableAxe];
+      return artSource;
+    } else {
+      if (variableAxe < 3) {
+        variableAxe = variableAxe + 2;
+        const artSource = functionArray[variableAxe];
+        return artSource;
+      } else {
+        if (variableAxe >= 3) variableAxe = variableAxe - 2;
+        const artSource = functionArray[variableAxe];
+        return artSource;
+      }
+    }
   };
 
   const handleRandomClick = () => {

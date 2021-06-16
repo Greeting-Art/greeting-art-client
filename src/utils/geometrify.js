@@ -93,12 +93,12 @@ export const stealthyArt = () => {
       p5.createCanvas(artResolution, artResolution);
       p5.stroke(randomizeColor(), randomizeColor(), randomizeColor());
       p5.background(randomizeColor(), randomizeColor(), randomizeColor());
-      const onOff = posNegToggle();
-      if (onOff !== 1)
-        return p5.erase(randomizeSize(), randomizeSize(), randomizeSize());
-      const eraseRoll = Math.round(Math.random() * 9);
-      if (eraseRoll === 3 || eraseRoll === 6)
-        return p5.erase(randomizeSize(), randomizeSize(), randomizeSize());
+      // const onOff = posNegToggle();
+      // if (onOff !== 1)
+      //   return p5.erase(randomizeSize(), randomizeSize(), randomizeSize());
+      // const eraseRoll = Math.round(Math.random() * 9);
+      // if (eraseRoll === 3 || eraseRoll === 6)
+      //   return p5.erase(randomizeSize(), randomizeSize(), randomizeSize());
       p5.erase(randomizeColor(), randomizeColor(), randomizeColor());
       p5.noLoop();
     };
