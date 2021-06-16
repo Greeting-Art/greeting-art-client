@@ -35,16 +35,111 @@ p {
 .rightHelpBar {
   display: flex;
   flex-direction: row;
-  align-items: initial;
+  align-items: flex-start;
   justify-content: right;
+  position: relative;
 }
+
+/* .helpBox {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 240;
+  height: 240;
+  color: orangered;
+  justify-content: right;
+  align-items: flex-end;
+  position: absolute;
+  border: 1px solid orangered;
+  box-shadow: transparent;
+}
+
+.welcomeText {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2em;
+} */
 
 /* .linkMUI {
   color: rgb(84, 113, 207);
   background-color: red;
 } */
 
-/* unneccessary -- the style is coming from the global button style in app.css*/
+/* unnecessary -- the style is coming from the global button style in app.css*/
 /* .iconButtonMUI:active {
   border: none;
 } */
+
+.newModal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: orangered;
+  font-family: 'RobotoMono', monospace;
+}
+
+.newModalContent {
+  width: 640px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.newModalHeader,
+.newModalFooter {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newModalFooter {
+  background-color: rgb(84, 113, 207);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* set this title to more 3D13 word art */
+
+.newModalTitle {
+  margin: 0;
+  color: rgb(84, 113, 207);
+  font-size: 1.5em;
+}
+
+.newModalBody {
+  padding: 10px;
+  border-top: 1px solid rgb(241, 241, 241);
+  border-bottom: 1px solid rgb(241, 241, 241);
+  font-size: 1em;
+}
+
+.modalCloseButton {
+  background-color: orangered;
+  color: white;
+  border-radius: 4px;
+  border: solid 1px white;
+  font-size: 1em;
+  box-shadow: none;
+  padding: 0px 8px 0px 8px;
+}
+
+.modalCloseButton:hover {
+  background-color: white;
+  color: orangered;
+  border-radius: 4px;
+}
+
+.modalCloseButton:active {
+  background-color: orangered;
+  color: white;
+  border-radius: 4px;
+  border: double 1px white;
+}
