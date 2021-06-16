@@ -2,6 +2,7 @@
 /* eslint-disable indent */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { sendToGallery } from '../../utils/s3-utils';
 import styles from './saveAndGalleryButtons.css';
 
@@ -35,17 +36,22 @@ function SaveAndGalleryButtons({ handleSaveClick }) {
 
   return (
     <div>
-      <button className={styles.saveButton} onClick={handleClick}>
+      <div>
+        <button className={styles.saveButton} onClick={handleClick}>
           Save Canvas
-      </button>
-
+        </button>
+      </div>
+      <div>
       <button className={styles.galleryButton} onClick={uploadClick}>
         Add to Gallery
       </button>
+      </div>
 
-      <p id="uploadedMsg" style={{ visibility: 'hidden' }}>
+      <Link to={'/gallery'} className={styles.gLink}>
+        <p id="uploadedMsg" className={styles.galleryLink} style={{ visibility: 'hidden' }}>
             Uploaded to Gallery!
-      </p>
+        </p>
+      </Link>
     </div>
   );
 }

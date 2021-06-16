@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 /* eslint-disable indent */
 
-const artResolution = 540;
+const artResolution = 500;
 
 export const randomArt = () => {
   const sketch = (p5) => {
@@ -13,12 +13,12 @@ export const randomArt = () => {
       for (let i = 0; i < 100; i++) {
         p5.fill(p5.random(255), p5.random(255), p5.random(255), p5.random(255));
 
-        p5.square(p5.random(400), p5.random(400), p5.random(100));
+        p5.square(p5.random(artResolution), p5.random(artResolution), p5.random(100));
 
-        p5.circle(p5.random(400), p5.random(400), p5.random(100));
+        p5.circle(p5.random(artResolution), p5.random(artResolution), p5.random(100));
       }
     };
-    console.log('>>>', sketch);
+    // console.log('>>>', sketch);
   };
   return sketch;
 };
