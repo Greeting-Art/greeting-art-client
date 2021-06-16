@@ -69,7 +69,7 @@ canvas {
   box-shadow: none;
   width: 140px;
   margin: 4px;
-  font-family: 'Caveat', cursive;
+  font-family: 'RobotoMono', monospace;
 }
 
 /* cursor hovers over the button */
@@ -79,7 +79,7 @@ canvas {
   color: white;
   border: double 1px white;
   /* background: none; */
-  box-shadow: none;
+  /* box-shadow: none; */
 }
 
 /* mouse click on the button */
@@ -89,7 +89,7 @@ canvas {
   color: rgb(84, 113, 207);
   border: dotted 1px white;
   /* background: none; */
-  box-shadow: none;
+  /* box-shadow: none; */
 }
 
 .lowerBar {
