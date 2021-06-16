@@ -73,8 +73,8 @@ export default function ArtGenerator() {
         <div className={styles.controlBar}></div>
         <div className={styles.artBar}>
           <div className={styles.leftColumn}>
-            <img src="src\assets\appIcons\speak-beautiful.png" height="100" />
-            <img src="src\assets\appIcons\gif-blob-one.gif" />
+            {/* <img src="src\assets\appIcons\speak-beautiful.png" height="100" />
+            <img src="src\assets\appIcons\gif-blob-one.gif" /> */}
           </div>
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>

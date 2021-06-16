@@ -78,20 +78,23 @@ p {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: orangered;
+  font-family: 'RobotoMono', monospace;
 }
 
 .newModalContent {
   width: 500px;
   background-color: #fff;
+  border-radius: 8px;
 }
 
 .newModalHeader,
 .newModalFooter {
-  padding: 10px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,6 +102,8 @@ p {
 
 .newModalFooter {
   background-color: rgb(84, 113, 207);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 /* set this title to more 3D13 word art */
@@ -106,12 +111,14 @@ p {
 .newModalTitle {
   margin: 0;
   color: rgb(84, 113, 207);
+  font-size: 1.5em;
 }
 
 .newModalBody {
   padding: 10px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid rgb(241, 241, 241);
+  border-bottom: 1px solid rgb(241, 241, 241);
+  font-size: 1em;
 }
 
 .modalCloseButton {
@@ -121,6 +128,7 @@ p {
   border: solid 1px white;
   font-size: 1em;
   box-shadow: none;
+  padding: 0px 8px 0px 8px;
 }
 
 .modalCloseButton:hover {
