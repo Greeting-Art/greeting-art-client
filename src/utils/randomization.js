@@ -23,8 +23,6 @@ const posNegToggle = () => {
   return posNegArray[Math.round(Math.random() * 1)];
 };
 
-const artResolution = 540;
-
 export const randomArt = () => {
   const sketch = (p5) => {
     p5.setup = () => {
@@ -58,10 +56,7 @@ export const weirdArt = () => {
   const sketch = (p5) => {
     p5.setup = () => {
       p5.createCanvas(artResolution, artResolution);
-<<<<<<< HEAD
-=======
-      // p5.noStroke();
->>>>>>> 157e5080f56017bea71bb0e4557b9fd7bff1da78
+
       p5.stroke(randomizeColor(), randomizeColor(), randomizeColor());
       p5.background(randomizeColor(), randomizeColor(), randomizeColor());
       p5.bezier(
