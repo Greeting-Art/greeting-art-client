@@ -69,11 +69,14 @@ function Header() {
           </MenuItem>
         </Menu>
       </div>
-      <div className={styles.titleBar}>
-        <figure>
-          <img src="src\assets\3D13-greeting-art-transparent.png" width="640" />
-        </figure>
-      </div>
+      <Link to={'/'}>
+        <div className={styles.titleBar}>
+          <figure>
+            <img src="src\assets\3D13-greeting-art-transparent.png" width="640" />
+          </figure>
+        </div>
+      </Link>
+      
       <div className={styles.rightHelpBar}>
         <IconButton
           // edge="start"

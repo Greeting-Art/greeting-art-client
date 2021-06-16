@@ -35,16 +35,20 @@ exports[`App component renders App 1`] = `
         />
       </button>
     </div>
-    <div
-      class="titleBar"
+    <a
+      href="/"
     >
-      <figure>
-        <img
-          src="src\\\\assets\\\\3D13-greeting-art-transparent.png"
-          width="640"
-        />
-      </figure>
-    </div>
+      <div
+        class="titleBar"
+      >
+        <figure>
+          <img
+            src="src\\\\assets\\\\3D13-greeting-art-transparent.png"
+            width="640"
+          />
+        </figure>
+      </div>
+    </a>
     <div
       class="rightHelpBar"
     >
