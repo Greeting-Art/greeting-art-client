@@ -1,5 +1,9 @@
 .galleryLI {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .galleryUL {

@@ -35,17 +35,17 @@ function SaveAndGalleryButtons({ handleSaveClick }) {
   };
 
   return (
-    <div>
-      <div>
+    <div className={styles.saveAndGalleryParent}>
+    
         <button className={styles.saveButton} onClick={handleClick}>
           Save Canvas
         </button>
-      </div>
-      <div>
+      
+    
       <button className={styles.galleryButton} onClick={uploadClick}>
         Add to Gallery
       </button>
-      </div>
+      
 
       <Link to={'/gallery'} className={styles.gLink}>
         <p id="uploadedMsg" className={styles.galleryLink} style={{ visibility: 'hidden' }}>
