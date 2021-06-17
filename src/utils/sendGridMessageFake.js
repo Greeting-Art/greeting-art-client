@@ -1,7 +1,4 @@
 function sendMsg(formData, artId) {
-
-
-  //change url to deployed sites
     return {
         method: 'POST',
         headers: {
@@ -253,7 +250,6 @@ function sendMsg(formData, artId) {
             </body>
           </html>`
         })
-
     }
 }
 

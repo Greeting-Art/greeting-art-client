@@ -2,7 +2,6 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
-//import ArtCanvas from '../components/artCanvas/ArtCanvas';
 import SaveAndGalleryButtons from '../components/artControls/SaveAndGalleryButtons';
 import { randomArt, weirdArt, blankP5Canvas } from '../utils/randomization';
 import { geometricArt, stealthyArt, spaceyArt } from '../utils/geometrify';
@@ -19,7 +18,6 @@ export default function ArtGenerator() {
 
   useEffect(() => {
     setLoading(false);
-    console.log('***', counter);
   }, [counter]);
 
   const functionArray = [
@@ -52,16 +50,12 @@ export default function ArtGenerator() {
     setCounter(counter + 1);
     setYetRendered(true);
     setUserStage(1);
-    console.log('>>>', counter);
   };
 
   const handleSaveClick = () => {
     downloadCanvas();
   };
 
-  console.log('>>>STAGE:', userStage);
-
-  // if (loading) return <h2>loading...</h2>;
   if (loading)
     return (
       <div className={styles.loadingSpinner}>
@@ -72,7 +66,6 @@ export default function ArtGenerator() {
   return (
     <main className={styles.artPage}>
       <section className={styles.artHeader}></section>
-
       <section className={styles.artBody}>
         <div className={styles.controlBar}></div>
         <div className={styles.artBar}>
@@ -80,6 +73,7 @@ export default function ArtGenerator() {
             <BlobRoss stage={userStage} />
           </div>
           <div className={styles.centerColumn}>
+
             <figure className={styles.canvasWrapper}>
               {!yetRendered ? (
                 <P5Wrapper sketch={blankP5Canvas()} />
@@ -87,6 +81,7 @@ export default function ArtGenerator() {
                 <P5Wrapper sketch={toggleArtSource()} />
               )}
             </figure>
+
           </div>
           <div className={styles.rightColumn}>
             <button className={styles.randomButton} onClick={handleRandomClick}>
@@ -96,7 +91,6 @@ export default function ArtGenerator() {
           </div>
         </div>
         <div className={styles.lowerBar}>
-          {/* <img src="src\assets\navIcons\idea.png" height="40" /> */}
         </div>
       </section>
     </main>

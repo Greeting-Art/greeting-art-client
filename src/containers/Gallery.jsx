@@ -17,7 +17,6 @@ export default function Gallery() {
       .finally(() => setLoading(false));
   }, []);
 
-  // if (loading) return <h2 className={styles.loadingIndicator}>loading...</h2>;
   if (loading)
     return (
       <div className={styles.loadingSpinner}>

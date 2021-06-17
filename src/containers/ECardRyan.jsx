@@ -61,7 +61,6 @@ export default function ECardRyan() {
           You've found the secret easter egg, congrats!!!! Now you have the opportunity to email our Great Leader.
         </p>
       </section>
-
       <section className={styles.eCardBody}>
         <div className={styles.eCardDisplay}>
           <figure className={styles.canvasWrapper}>

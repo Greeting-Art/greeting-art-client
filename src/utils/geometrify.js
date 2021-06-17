@@ -1,7 +1,4 @@
 /* eslint-disable max-len */
-
-//import { InsertChartRounded } from '@material-ui/icons';
-
 /* eslint-disable indent */
 const artResolution = 500;
 
@@ -13,7 +10,6 @@ const randomizeNumber = () => {
   return Math.round(Math.random() * artResolution);
 };
 
-// this randomizeSize function can be controlled via user input or randomly, to say how large/small the shapes can be
 const randomizeSize = () => {
   return Math.round(Math.random() * 80);
 };
@@ -88,18 +84,11 @@ export const stealthyArt = () => {
       p5.createCanvas(artResolution, artResolution);
       p5.stroke(randomizeColor(), randomizeColor(), randomizeColor());
       p5.background(randomizeColor(), randomizeColor(), randomizeColor());
-      // const onOff = posNegToggle();
-      // if (onOff !== 1)
-      //   return p5.erase(randomizeSize(), randomizeSize(), randomizeSize());
-      // const eraseRoll = Math.round(Math.random() * 9);
-      // if (eraseRoll === 3 || eraseRoll === 6)
-      //   return p5.erase(randomizeSize(), randomizeSize(), randomizeSize());
       p5.erase(randomizeColor(), randomizeColor(), randomizeColor());
       p5.noLoop();
     };
     p5.draw = () => {
       const density = randomizeNumber() / 2;
-
       const randomShape = () => {
         const triAnchorOne = randomizeNumber();
         const triAnchorTwo = triAnchorOne + randomizeSize() * posNegToggle();

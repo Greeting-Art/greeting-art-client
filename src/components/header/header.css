@@ -6,7 +6,6 @@
 .fullHeader {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
-  /* height: 20vh; */
 }
 
 .linkBar {
@@ -15,7 +14,6 @@
   align-items: flex-start;
   justify-content: left;
   font-size: 0.8em;
-  /* background-color: white; */
 }
 
 p {
@@ -27,8 +25,6 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* font-weight: lighter;
-  font-size: 5em; */
 }
 
 .rightHelpBar {
@@ -42,43 +38,6 @@ p {
 .menuText {
   font-family: 'RobotoMono', monospace;
 }
-
-/* .helpBox {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 240;
-  height: 240;
-  color: orangered;
-  justify-content: right;
-  align-items: flex-end;
-  position: absolute;
-  border: 1px solid orangered;
-  box-shadow: transparent;
-}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-#simple-menu {
-  
-}
-=======
-.welcomeText {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 1.2em;
-} */
-
-/* .linkMUI {
-  color: rgb(84, 113, 207);
-  background-color: red;
-} */
-
-/* unnecessary -- the style is coming from the global button style in app.css*/
-/* .iconButtonMUI:active {
-  border: none;
-} */
 
 .newModal {
   z-index: 1;
@@ -98,7 +57,6 @@ p {
 .newModalContent {
   width: 640px;
   background-color: #fff;
-  /* color: #bd3200; */
   color: orangered;
   border-radius: 8px;
 }
@@ -107,14 +65,6 @@ p {
   color: rgb(84, 113, 207);
 }
 
-/* .helpList {
-  list-style-type: circle;
-} */
-
-/* .helpItem {
-  display: flex;
-  flex-direction: column;
-} */
 .newModalHeader,
 .newModalFooter {
   padding: 20px;
@@ -128,8 +78,6 @@ p {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
 }
-
-/* set this title to more 3D13 word art */
 
 .newModalTitle {
   margin: 0;
@@ -157,7 +105,6 @@ p {
 .modalCloseButton:hover {
   background-color: white;
   color: orangered;
-  /* color: #bd3200; */
   border-radius: 4px;
 }
 
