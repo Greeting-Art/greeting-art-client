@@ -57,16 +57,16 @@ function Header() {
           onClose={handleClose}
         >
           <MenuItem onClick={handleClose} component={Link} to="/">
-            Home
+            🖌  Home
           </MenuItem>
           <MenuItem onClick={handleClose} component={Link} to="/gallery">
-            Gallery
+            🖼  Gallery
           </MenuItem>
           <MenuItem onClick={handleClose} component={Link} to="/ecard">
-            E-Card
+            ✉  E-Card
           </MenuItem>
           <MenuItem onClick={handleClose} component={Link} to="/aboutus">
-            About Us
+            🖰  About
           </MenuItem>
         </Menu>
       </div>

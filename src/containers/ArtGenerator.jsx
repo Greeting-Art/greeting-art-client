@@ -2,18 +2,20 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
-import ArtCanvas from '../components/artCanvas/ArtCanvas';
+//import ArtCanvas from '../components/artCanvas/ArtCanvas';
 import SaveAndGalleryButtons from '../components/artControls/SaveAndGalleryButtons';
 import { randomArt, weirdArt, blankP5Canvas } from '../utils/randomization';
 import { geometricArt, stealthyArt, spaceyArt } from '../utils/geometrify';
 import downloadCanvas from '../utils/utils';
 import styles from './ArtGenerator.css';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import BlobRoss from '../components/blobRoss/BlobRoss';
 
 export default function ArtGenerator() {
   const [loading, setLoading] = useState(true);
   const [counter, setCounter] = useState(0);
   const [yetRendered, setYetRendered] = useState(false);
+  const [userStage, setUserStage] = useState(0);
 
   useEffect(() => {
     setLoading(false);
@@ -29,19 +31,18 @@ export default function ArtGenerator() {
   ];
 
   const toggleArtSource = () => {
-    let variableAxe = Math.round(Math.random() * 4);
+    let artIndex = Math.round(Math.random() * 4);
     if (counter % 2 !== 0) {
-      console.log('VVVMMMAAA', variableAxe);
-      const artSource = functionArray[variableAxe];
+      const artSource = functionArray[artIndex];
       return artSource;
     } else {
-      if (variableAxe < 3) {
-        variableAxe = variableAxe + 2;
-        const artSource = functionArray[variableAxe];
+      if (artIndex < 3) {
+        artIndex = artIndex + 2;
+        const artSource = functionArray[artIndex];
         return artSource;
       } else {
-        if (variableAxe >= 3) variableAxe = variableAxe - 2;
-        const artSource = functionArray[variableAxe];
+        if (artIndex >= 3) artIndex = artIndex - 2;
+        const artSource = functionArray[artIndex];
         return artSource;
       }
     }
@@ -50,12 +51,16 @@ export default function ArtGenerator() {
   const handleRandomClick = () => {
     setCounter(counter + 1);
     setYetRendered(true);
+    setUserStage(1);
     console.log('>>>', counter);
   };
 
   const handleSaveClick = () => {
     downloadCanvas();
+    setUserStage(2);
   };
+
+  console.log('>>>STAGE:', userStage);
 
   // if (loading) return <h2>loading...</h2>;
   if (loading)
@@ -73,8 +78,7 @@ export default function ArtGenerator() {
         <div className={styles.controlBar}></div>
         <div className={styles.artBar}>
           <div className={styles.leftColumn}>
-            {/* <img src="src\assets\appIcons\speak-beautiful.png" height="100" />
-            <img src="src\assets\appIcons\gif-blob-one.gif" /> */}
+            <BlobRoss stage={userStage} />
           </div>
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>
