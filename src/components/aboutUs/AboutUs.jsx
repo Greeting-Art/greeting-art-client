@@ -10,6 +10,7 @@ import Eion from '../../assets/teamPics/Eion.jpg';
 import Parker from '../../assets/teamPics/Parker.jpg';
 import Sam from '../../assets/teamPics/Sam_1.jpg';
 import Stephen from '../../assets/teamPics/Stephen.jpg';
+import { Link } from 'react-router-dom';
 
 function AboutUsComp() {
   return (
@@ -77,7 +78,9 @@ function AboutUsComp() {
         </div>
 
         <div className={styles.memberItem}>
+          <Link to={'/Ryan'}>
           <img className={styles.blobImage} alt="Blob" src={Blob} />
+          </Link>
           <h4>Blob Ross</h4>
           <p className={styles.devTitle}>Sr. Art Generator</p>
           <p>
@@ -91,7 +94,7 @@ function AboutUsComp() {
                 src={linkedIn}
                 alt="linkedIn"
               />
-            </a>
+              </a>
             <a
               href="https://github.com/Greeting-Art"
               target="_blank"
@@ -102,7 +105,7 @@ function AboutUsComp() {
                 src={github}
                 alt="github"
               />
-            </a>
+              </a>
           </p>
         </div>
       </div>
