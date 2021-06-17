@@ -57,7 +57,6 @@ export default function ArtGenerator() {
 
   const handleSaveClick = () => {
     downloadCanvas();
-    setUserStage(2);
   };
 
   console.log('>>>STAGE:', userStage);
