@@ -15,7 +15,7 @@ export default function ArtGenerator() {
   const [loading, setLoading] = useState(true);
   const [counter, setCounter] = useState(0);
   const [yetRendered, setYetRendered] = useState(false);
-  const [userStage, setUserStage] = useState('navWelcome');
+  const [userStage, setUserStage] = useState(0);
 
   useEffect(() => {
     setLoading(false);
@@ -31,19 +31,18 @@ export default function ArtGenerator() {
   ];
 
   const toggleArtSource = () => {
-    let variableAxe = Math.round(Math.random() * 4);
+    let artIndex = Math.round(Math.random() * 4);
     if (counter % 2 !== 0) {
-      console.log('VVVMMMAAA', variableAxe);
-      const artSource = functionArray[variableAxe];
+      const artSource = functionArray[artIndex];
       return artSource;
     } else {
-      if (variableAxe < 3) {
-        variableAxe = variableAxe + 2;
-        const artSource = functionArray[variableAxe];
+      if (artIndex < 3) {
+        artIndex = artIndex + 2;
+        const artSource = functionArray[artIndex];
         return artSource;
       } else {
-        if (variableAxe >= 3) variableAxe = variableAxe - 2;
-        const artSource = functionArray[variableAxe];
+        if (artIndex >= 3) artIndex = artIndex - 2;
+        const artSource = functionArray[artIndex];
         return artSource;
       }
     }
@@ -52,14 +51,16 @@ export default function ArtGenerator() {
   const handleRandomClick = () => {
     setCounter(counter + 1);
     setYetRendered(true);
-    setUserStage('navArt');
+    setUserStage(1);
     console.log('>>>', counter);
   };
 
   const handleSaveClick = () => {
     downloadCanvas();
-    setUserStage('navSave');
+    setUserStage(2);
   };
+
+  console.log('>>>STAGE:', userStage);
 
   // if (loading) return <h2>loading...</h2>;
   if (loading)
