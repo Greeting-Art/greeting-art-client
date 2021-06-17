@@ -2,6 +2,8 @@
 /* eslint-disable indent */
 import React from 'react';
 import styles from './aboutUs.css';
+import linkedIn from '../../assets/linkedin.png';
+import github from '../../assets/github.png';
 // import team member photos here
 
 function AboutUsComp() {
@@ -21,7 +23,7 @@ function AboutUsComp() {
             >
               <img
                 className={styles.linkedInLogo}
-                src="src/assets/linkedin.png"
+                src={linkedIn}
                 alt="linkedIn"
               />
             </a>
@@ -32,7 +34,7 @@ function AboutUsComp() {
             >
               <img
                 className={styles.githubLogo}
-                src="src/assets/github.png"
+                src={github}
                 alt="github"
               />
             </a>
@@ -50,7 +52,7 @@ function AboutUsComp() {
             >
               <img
                 className={styles.linkedInLogo}
-                src="src/assets/linkedin.png"
+                src={linkedIn}
                 alt="linkedIn"
               />
             </a>
@@ -61,7 +63,7 @@ function AboutUsComp() {
             >
               <img
                 className={styles.githubLogo}
-                src="src/assets/github.png"
+                src={github}
                 alt="github"
               />
             </a>
@@ -79,7 +81,7 @@ function AboutUsComp() {
             >
               <img
                 className={styles.linkedInLogo}
-                src="src/assets/linkedin.png"
+                src={linkedIn}
                 alt="linkedIn"
               />
             </a>
@@ -90,7 +92,7 @@ function AboutUsComp() {
             >
               <img
                 className={styles.githubLogo}
-                src="src/assets/github.png"
+                src={github}
                 alt="github"
               />
             </a>
@@ -108,7 +110,7 @@ function AboutUsComp() {
             >
               <img
                 className={styles.linkedInLogo}
-                src="src/assets/linkedin.png"
+                src={linkedIn}
                 alt="linkedIn"
               />
             </a>
@@ -119,7 +121,7 @@ function AboutUsComp() {
             >
               <img
                 className={styles.githubLogo}
-                src="src/assets/github.png"
+                src={github}
                 alt="github"
               />
             </a>
