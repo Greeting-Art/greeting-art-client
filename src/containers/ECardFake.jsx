@@ -113,7 +113,7 @@ export default function ECard() {
             </form>
           ) : (
             <div>
-              <h1>You ecard has been sent</h1>
+              <h1>You E-Card has been sent</h1>
               <button className={styles.buttons} onClick={handleReroute}>
                 Create Art
               </button>

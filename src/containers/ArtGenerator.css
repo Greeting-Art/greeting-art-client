@@ -53,43 +53,33 @@ canvas {
   border: solid 1px white;
 }
 
-/* .canvasWrapper {
-  border: solid 1px white;
-} */
-
-.randomButton,
-.saveButton {
+.randomButton {
   background-color: rgb(84, 113, 207);
   color: white;
   padding: 8px;
+  margin: 3px;
   border-radius: 0;
   border: none;
   font-size: 1.3em;
-  /* background: none; */
   box-shadow: none;
-  width: 140px;
-  margin: 4px;
   font-family: 'RobotoMono', monospace;
 }
 
 /* cursor hovers over the button */
-.randomButton:hover,
-.saveButton:hover {
+.randomButton:hover {
   background-color: rgb(84, 113, 207);
   color: white;
-  border: double 1px white;
-  /* background: none; */
-  /* box-shadow: none; */
+  outline: solid 1px white;
+  /* border: 1px solid white;
+  margin: -1px; */
 }
 
 /* mouse click on the button */
-.randomButton:active,
-.saveButton:active {
+.randomButton:active {
   background-color: white;
   color: rgb(84, 113, 207);
-  border: dotted 1px white;
-  /* background: none; */
-  /* box-shadow: none; */
+  border: 1px solid white;
+  
 }
 
 .lowerBar {

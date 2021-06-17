@@ -108,7 +108,7 @@ export default function ECard() {
           </form>
          ) : (
            <div className={styles.sentMsg}>
-          <h1>Your E-card has been sent!</h1>
+          <h1>Your E-Card has been sent!</h1>
           <button 
             className={styles.buttons}
             onClick={handleReroute}>Create Art</button>
