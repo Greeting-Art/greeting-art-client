@@ -79,11 +79,6 @@ export default function ArtGenerator() {
         <div className={styles.artBar}>
           <div className={styles.leftColumn}>
             <BlobRoss stage={userStage} />
-            {/* <img
-              src="src\assets\appIcons\blob-speech_nav-welcome.png"
-              height="180"
-            />
-            <img src="src\assets\appIcons\blob-ross_8f128.gif" /> */}
           </div>
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>
