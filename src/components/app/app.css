@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;1,700&display=swap');
+
 /* https://stackoverflow.com/questions/41676054/how-to-add-fonts-to-create-react-app-based-projects */
 
 /* @font-face {
@@ -28,7 +32,9 @@
 } */
 
 body {
-  font-family: 'RobotoMono', monospace;
+  /* font-family: 'RobotoMono', monospace; */
+  font-family: 'Archivo', sans-serif;
+  /* font-family: 'Mulish', sans-serif; */
   /* font-family: 'Caveat', cursive; */
   background-color: rgb(84, 113, 207);
   font-size: 1.2em;
