@@ -18,10 +18,28 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid white;
-  margin: 10px;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 15px;
+  width: 200px;
+  height: 400px;
+  
 }
 
+.memberImage {
+  margin: 10px;
+  width: 150px;
+  border-radius: 75px;
+}
+
+.blobImage {
+  margin: 10px;
+  width: 150px;
+}
+
+.devTitle {
+  text-align: center;
+}
 .linkedInLogo {
   height: 30px;
   padding: 5px;

@@ -4,7 +4,11 @@ import React from 'react';
 import styles from './aboutUs.css';
 import linkedIn from '../../assets/linkedin.png';
 import github from '../../assets/github.png';
-// import team member photos here
+import Blob from '../../assets/appIcons/blob-ross_8f128.gif';
+import Eion from '../../assets/teamPics/Eion.jpg';
+import Parker from '../../assets/teamPics/Parker.jpg';
+import Sam from '../../assets/teamPics/Sam_1.jpg';
+import Stephen from '../../assets/teamPics/Stephen.jpg';
 
 function AboutUsComp() {
   return (
@@ -12,9 +16,9 @@ function AboutUsComp() {
       <p className={styles.teamHeader}>About the Team</p>
       <div className={styles.teamMembers}>
         <div className={styles.memberItem}>
-          <p>Photo goes here!</p>
-          {/* <img alt='Sam' src={sam} /> */}
-          <div>Eion</div>
+        <img className={styles.memberImage} alt="Eion" src={Eion}/>
+          <h4>Eion Nelson</h4>
+          <p className={styles.devTitle}>Software Developer</p>
           <p>
             <a
               href="https://www.linkedin.com/in/eionnelson/"
@@ -41,9 +45,9 @@ function AboutUsComp() {
           </p>
         </div>
         <div className={styles.memberItem}>
-          <p>Photo goes here!</p>
-          {/* <img alt='Sam' src={sam} /> */}
-          <div>Parker</div>
+        <img className={styles.memberImage} alt="Parker" src={Parker}/>
+          <h4>Parker Sequeira</h4>
+          <p className={styles.devTitle}>Software Developer</p>
           <p>
             <a
               href="https://www.linkedin.com/in/parker-sequeira/"
@@ -70,9 +74,9 @@ function AboutUsComp() {
           </p>
         </div>
         <div className={styles.memberItem}>
-          <p>Photo goes here!</p>
-          {/* <img alt='Sam' src={sam} /> */}
-          <div>Sam G</div>
+        <img className={styles.memberImage} alt="Sam" src={Sam}/>
+          <h4>Sam Gerber</h4>
+          <p className={styles.devTitle}>Software Developer</p>
           <p>
             <a
               href="https://www.linkedin.com/in/sam-h-gerber/"
@@ -99,9 +103,38 @@ function AboutUsComp() {
           </p>
         </div>
         <div className={styles.memberItem}>
-          <p>Photo goes here!</p>
-          {/* <img alt='Sam' src={sam} /> */}
-          <div>Stephen</div>
+        <img className={styles.memberImage} alt="Stephen" src={Stephen}/>
+          <h4>Stephen Tamiesie</h4>
+          <p className={styles.devTitle}>Software Developer</p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/stephentamiesie/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                className={styles.linkedInLogo}
+                src={linkedIn}
+                alt="linkedIn"
+              />
+            </a>
+            <a
+              href="https://github.com/stamiesie"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                className={styles.githubLogo}
+                src={github}
+                alt="github"
+              />
+            </a>
+          </p>
+        </div>
+        <div className={styles.memberItem}>
+          <img className={styles.blobImage} alt="Blob" src={Blob} />
+          <h4>Blob Ross</h4>
+          <p className={styles.devTitle}>Software Developer</p>
           <p>
             <a
               href="https://www.linkedin.com/in/stephentamiesie/"
