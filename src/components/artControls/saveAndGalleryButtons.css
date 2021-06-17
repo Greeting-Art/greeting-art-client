@@ -27,8 +27,6 @@
   background-color: rgb(84, 113, 207);
   color: white;
   outline: solid 1px white;
-  /* border: 1px solid white;
-  margin: -1px; */
   box-shadow: none;
 }
 
@@ -38,9 +36,13 @@
 .galleryLink:active {
   background-color: white;
   color: rgb(84, 113, 207);
-  border: 1px solid white;
-  margin: -1px;
+  outline: solid 1px white;
   box-shadow: none;
+}
+
+.galleryLink {
+  width: 230px;
+  text-align: center;
 }
 
 .gLink {

@@ -70,15 +70,13 @@ canvas {
   background-color: rgb(84, 113, 207);
   color: white;
   outline: solid 1px white;
-  /* border: 1px solid white;
-  margin: -1px; */
 }
 
 /* mouse click on the button */
 .randomButton:active {
   background-color: white;
   color: rgb(84, 113, 207);
-  border: 1px solid white;
+  outline: solid 1px white;
   
 }
 

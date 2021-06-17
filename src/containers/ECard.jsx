@@ -63,7 +63,7 @@ export default function ECard() {
   return (
     <main className={styles.eCardPage}>
       <section className={styles.eCardHeader}>
-        <p>Send an E-Card</p>
+        <p>Send an E-Greeting Card</p>
       </section>
 
       <section className={styles.eCardBody}>
@@ -108,7 +108,7 @@ export default function ECard() {
           </form>
          ) : (
            <div className={styles.sentMsg}>
-          <h1>Your E-Card has been sent!</h1>
+          <h1>Your E-Greeting Card has been sent!</h1>
           <button 
             className={styles.buttons}
             onClick={handleReroute}>Create Art</button>
