@@ -2,18 +2,20 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
-import ArtCanvas from '../components/artCanvas/ArtCanvas';
+//import ArtCanvas from '../components/artCanvas/ArtCanvas';
 import SaveAndGalleryButtons from '../components/artControls/SaveAndGalleryButtons';
 import { randomArt, weirdArt, blankP5Canvas } from '../utils/randomization';
 import { geometricArt, stealthyArt, spaceyArt } from '../utils/geometrify';
 import downloadCanvas from '../utils/utils';
 import styles from './ArtGenerator.css';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import BlobRoss from '../components/blobRoss/BlobRoss';
 
 export default function ArtGenerator() {
   const [loading, setLoading] = useState(true);
   const [counter, setCounter] = useState(0);
   const [yetRendered, setYetRendered] = useState(false);
+  const [userStage, setUserStage] = useState('navWelcome');
 
   useEffect(() => {
     setLoading(false);
@@ -50,11 +52,13 @@ export default function ArtGenerator() {
   const handleRandomClick = () => {
     setCounter(counter + 1);
     setYetRendered(true);
+    setUserStage('navArt');
     console.log('>>>', counter);
   };
 
   const handleSaveClick = () => {
     downloadCanvas();
+    setUserStage('navSave');
   };
 
   // if (loading) return <h2>loading...</h2>;
@@ -73,8 +77,12 @@ export default function ArtGenerator() {
         <div className={styles.controlBar}></div>
         <div className={styles.artBar}>
           <div className={styles.leftColumn}>
-            {/* <img src="src\assets\appIcons\speak-beautiful.png" height="100" />
-            <img src="src\assets\appIcons\gif-blob-one.gif" /> */}
+            <BlobRoss stage={userStage} />
+            {/* <img
+              src="src\assets\appIcons\blob-speech_nav-welcome.png"
+              height="180"
+            />
+            <img src="src\assets\appIcons\blob-ross_8f128.gif" /> */}
           </div>
           <div className={styles.centerColumn}>
             <figure className={styles.canvasWrapper}>
