@@ -166,7 +166,7 @@ function AboutUsComp() {
         </div>
         
       <footer className={styles.aboutFooter}>
-      **This app was made using resources by p5*js, AWS, SendGrid, Material-UI, FlatIcon and 3D Thirteen Pixel and Pixel Caps fonts by 30100flo and Mirz123, respectively. Blob Ross would also like to thank PiskelApp and last but certainly not least, "Blob Master" Jerud. Happy Rendering!
+      **This app was made using resources by p5*js, AWS, SendGrid, Material-UI, FlatIcon and 3D Thirteen Pixel and Pixel Emulator fonts by 30100flo and Pixel Sagas, respectively. Blob Ross would also like to thank PiskelApp and last but certainly not least, "Blob Master" Jerud. Happy Rendering!
       </footer>
     </div>
     </>
