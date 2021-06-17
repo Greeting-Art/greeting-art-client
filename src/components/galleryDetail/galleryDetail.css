@@ -33,8 +33,18 @@
 }
 
 .text {
-  background-color: #04AA6D;
+  font-family: 'RobotoMono', monospace;
+  background-color: rgb(84, 113, 207);
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+}
+
+.text:hover {
+  outline: solid 1px white;
+}
+
+.text:active {
+  background-color: white;
+  color: rgb(84, 113, 207);
 }
