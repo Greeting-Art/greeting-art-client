@@ -6,7 +6,6 @@
 .fullHeader {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
-  margin-top: 40px;
   /* height: 20vh; */
 }
 

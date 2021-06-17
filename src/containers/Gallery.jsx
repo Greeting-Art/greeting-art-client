@@ -26,16 +26,16 @@ export default function Gallery() {
     );
 
   return (
+    <>
     <main className={styles.galleryPage}>
       <section className={styles.galleryHeader}>
         <p>Gallery</p>
       </section>
+    
       <section className={styles.galleryBody}>
         <GalleryList Contents={Contents} />
-        </section>
-        <div className={styles.lowerBar}>
-        </div>
-      
+      </section>
     </main>
+    </>
   );
 }
