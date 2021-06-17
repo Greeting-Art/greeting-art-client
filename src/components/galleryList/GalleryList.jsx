@@ -2,28 +2,27 @@
 import React from 'react';
 import GalleryDetail from '../galleryDetail/GalleryDetail';
 import PropTypes from 'prop-types';
-import './galleryList.css'
+import styles from './galleryList.css';
 
-function GalleryList({Contents}) {
-    console.log('Contents in Gallery', Contents)
-    return (
-        <ul aria-label='artwork'>
-            {Contents.map((artWork) => 
-                <li key={artWork.Key}>
-                    <GalleryDetail Key={artWork.Key}/>
-                </li>
-            )}
-            
-        </ul>
-    )
+function GalleryList({ Contents }) {
+  console.log('Contents in Gallery', Contents);
+  return (
+    <ul aria-label="artwork" className={styles.galleryUL}>
+      {Contents.map((artWork) => (
+        <li key={artWork.Key} className={styles.galleryLI}>
+          <GalleryDetail Key={artWork.Key} />
+        </li>
+      ))}
+    </ul>
+  );
 }
 
 GalleryList.propTypes = {
-   Contents: PropTypes.arrayOf(
+  Contents: PropTypes.arrayOf(
     PropTypes.shape({
       Key: PropTypes.string.isRequired,
     })
   ).isRequired,
 };
 
-export default GalleryList
+export default GalleryList;

@@ -98,6 +98,14 @@ p {
   border-radius: 8px;
 }
 
+/* .helpList {
+  list-style-type: circle;
+} */
+
+/* .helpItem {
+  display: flex;
+  flex-direction: column;
+} */
 .newModalHeader,
 .newModalFooter {
   padding: 20px;
@@ -124,7 +132,7 @@ p {
   padding: 10px;
   border-top: 1px solid rgb(241, 241, 241);
   border-bottom: 1px solid rgb(241, 241, 241);
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .modalCloseButton {

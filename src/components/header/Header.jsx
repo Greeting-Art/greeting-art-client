@@ -11,6 +11,7 @@ import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
 // import WbIncandescentIcon from '@material-ui/icons/WbIncandescent';
 //import Modal from '@material-ui/core/Modal';
 import HelpModal from './HelpModal';
+import Logo3D from '../../assets/3D13-greeting-art-transparent.png';
 import styles from './header.css';
 
 function Header() {
@@ -72,11 +73,11 @@ function Header() {
       <Link to={'/'}>
         <div className={styles.titleBar}>
           <figure>
-            <img src="src\assets\3D13-greeting-art-transparent.png" width="640" />
+            <img src={Logo3D} width="640" />
           </figure>
         </div>
       </Link>
-      
+
       <div className={styles.rightHelpBar}>
         <IconButton
           // edge="start"

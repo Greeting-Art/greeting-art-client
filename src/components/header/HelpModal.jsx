@@ -17,18 +17,18 @@ export default function HelpModal({ show, onClose }) {
             This app is designed to be fun and easy to use! Here's a brief guide
             to the features:
           </p>
-          <p>
+          <p className={styles.helpItem}>
             🖌 Click <b>Randomize</b> on the homepage to create unique,
             generative digital art, and then if you'd like:
-            <ul>
+            <ul className={styles.helpList}>
               <li>save your art as a download</li>
               <li>add your art to the Gallery</li>
             </ul>
           </p>
 
-          <p>
+          <p className={styles.helpItem}>
             🖼 Browse artwork:
-            <ul>
+            <ul className={styles.helpList}>
               <li>
                 use the upper-left-hand menu to navigate to the <b>Gallery</b>
               </li>
@@ -36,9 +36,9 @@ export default function HelpModal({ show, onClose }) {
             </ul>
           </p>
 
-          <p>
+          <p className={styles.helpItem}>
             ✉ Send an E-Greeting Card:
-            <ul>
+            <ul className={styles.helpList}>
               <li>select any art from the Gallery</li>
               <li>add an email address, day/time and a message</li>
               <li>send away!</li>
