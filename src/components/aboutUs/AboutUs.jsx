@@ -9,7 +9,7 @@ import github from '../../assets/github.png';
 function AboutUsComp() {
   return (
     <div className={styles.teamContainer}>
-      <h1 className={styles.teamHeader}>About the Team</h1>
+      <p className={styles.teamHeader}>About the Team</p>
       <div className={styles.teamMembers}>
         <div className={styles.memberItem}>
           <p>Photo goes here!</p>
