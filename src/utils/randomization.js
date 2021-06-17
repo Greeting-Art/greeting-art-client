@@ -48,7 +48,6 @@ export const randomArt = () => {
       const density = randomizeSize();
 
       for (let i = 0; i < density; i++) {
-        //
         p5.fill('yellow');
         p5.square(
           p5.random(artResolution),
@@ -71,8 +70,6 @@ export const randomArt = () => {
         );
       }
     };
-
-    console.log('>>>', sketch);
   };
   return sketch;
 };
@@ -81,7 +78,6 @@ export const weirdArt = () => {
   const sketch = (p5) => {
     p5.setup = () => {
       p5.createCanvas(artResolution, artResolution);
-
       p5.stroke(randomizeColor(), randomizeColor(), randomizeColor());
       p5.background(randomizeColor(), randomizeColor(), randomizeColor());
       p5.bezier(

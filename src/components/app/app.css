@@ -6,36 +6,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;1,700&display=swap');
 
-/* https://stackoverflow.com/questions/41676054/how-to-add-fonts-to-create-react-app-based-projects */
-
-/* @font-face {
-  font-family: 'ThreeDThirteen';
-  src: local('3DThirteenPixelFontsRegular-2dPv'),
-    url(../../fonts/3DThirteenPixelFontsRegular-2dPv.ttf) format('truetype');
-} */
-
-/* @font-face {
-  font-family: 'Sagha';
-  src: url('../../../public/fonts/Sagha-WyOO4.woff') format('truetype');
-} */
-
-/* @font-face {
-  font-family: 'ImpactLabel';
-  src: local('ImpactLabel-lVYZ'),
-    url('../../../public/fonts/ImpactLabel-lVYZ.ttf') format('truetype');
-} */
-
-/* @font-face {
-  font-family: 'ImpactLabel Reverse';
-  src: local('ImpactLabelReversed-nDMR'),
-    url(../../fonts/ImpactLabelReversed-nDMR.ttf) format('truetype');
-} */
-
 body {
-  /* font-family: 'RobotoMono', monospace; */
   font-family: 'Archivo', sans-serif;
-  /* font-family: 'Mulish', sans-serif; */
-  /* font-family: 'Caveat', cursive; */
   background-color: rgb(84, 113, 207);
   font-size: 1.2em;
   color: white;

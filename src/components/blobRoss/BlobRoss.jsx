@@ -20,8 +20,6 @@ export default function BlobRoss({ stage }) {
     }
   };
   const currentSpeech = toggleSpeech();
-  console.log('>>>STAGE:', stage);
-  console.log('///toggle:', currentSpeech);
   return (
     <div className={styles.blobWrapper}>
       <figure className={styles.blobSpeechBubble}>

@@ -7,51 +7,41 @@ import { sendToGallery } from '../../utils/s3-utils';
 import styles from './saveAndGalleryButtons.css';
 
 function SaveAndGalleryButtons({ handleSaveClick }) {
-  // const [disable, setDisable] = useState(false);
 
   const handleClick = () => {
     handleSaveClick();
-    // setDisable(true);
   };
   
-
   const uploadClick = () => {
     const canvas = document.getElementsByClassName('p5Canvas')[0];
-    // console.log('Upload canvas', canvas);
 
-    canvas.toBlob((blob) => {
-      
+    canvas.toBlob((blob) => {    
       sendToGallery(blob)
-      .then((data) => {
-        console.log('Data Sent', data.location);
-      })
       .catch((err) => {
         console.log(err);
       });
 
     document.getElementById('uploadedMsg').style.visibility = 'visible';
-    
   });
   };
 
   return (
     <div className={styles.saveAndGalleryParent}>
     
-        <button className={styles.saveButton} onClick={handleClick}>
+      <button className={styles.saveButton} onClick={handleClick}>
           Save Canvas
-        </button>
-      
+      </button>
     
       <button className={styles.galleryButton} onClick={uploadClick}>
         Add to Gallery
       </button>
       
-
       <Link to={'/gallery'} className={styles.gLink}>
         <p id="uploadedMsg" className={styles.galleryLink} style={{ visibility: 'hidden' }}>
             See your art in the Gallery!
         </p>
       </Link>
+      
     </div>
   );
 }

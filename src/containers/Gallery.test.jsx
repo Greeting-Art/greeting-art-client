@@ -29,10 +29,6 @@ describe('art gallery container', () => {
       </MemoryRouter>
     );
 
-    // const screenLoading = await screen.getByText('loading...');
-    // return waitFor(() => {
-    //   expect(screenLoading).toMatchSnapshot();
-    // });
   });
 
   it('displays a list of images', async () => {

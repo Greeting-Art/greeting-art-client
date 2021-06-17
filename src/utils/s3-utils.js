@@ -1,14 +1,11 @@
 /* eslint-disable quotes */
 /* eslint-disable indent */
-
 import request from 'superagent';
 
 export async function sendToGallery(file) {
-    console.log('sendToGallery', file);
     const uploaded = await request
         .post(`https://limitless-everglades-53305.herokuapp.com/upload`)
         .attach('image', file);
-
         return uploaded.body;
 }
 

@@ -18,7 +18,6 @@
 .galleryBody {
   display: flex;
   flex-wrap: wrap;
-  /* padding-left: 125px; */
   width: 95vw;
 }
 

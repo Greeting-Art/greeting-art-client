@@ -39,10 +39,6 @@
   justify-content: center;
 }
 
-.centerColumn {
-  /* border: 3px solid black; */
-}
-
 .rightColumn {
   display: flex;
   flex-direction: column;

@@ -61,7 +61,6 @@ export default function ECard() {
           Choose a Greeting Art from the gallery before sending an E-Greeting card. 
         </p>
       </section>
-
       <section className={styles.eCardBody}>
         <div className={styles.eCardDisplay}>
           <figure className={styles.canvasWrapper}>

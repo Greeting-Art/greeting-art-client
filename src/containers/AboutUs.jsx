@@ -11,7 +11,6 @@ export default function AboutUs() {
     setLoading(false);
   }, []);
 
-  //if (loading) return <div className={styles.loader}>Loading...</div>;
   if (loading)
     return (
       <div className={styles.loadingSpinner}>
@@ -20,13 +19,9 @@ export default function AboutUs() {
     );
 
   return (
-    // <div>
-    //   <AboutUsComp />
-    // </div>
 
     <main className={styles.aboutPage}>
       <section className={styles.aboutHeader}></section>
-
       <section className={styles.aboutBody}>
         <div className={styles.aboutBar}>
           <div className={styles.leftColumn}>
