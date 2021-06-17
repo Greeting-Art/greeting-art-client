@@ -1,10 +1,10 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
 import styles from './ECard.css';
-import { sendMsg } from '../utils/sendGridMessageFake';
+import { sendMsg } from '../utils/sendGridMessageRyan';
 import { useHistory } from 'react-router-dom';
 
-export default function ECard() {
+export default function ECardRyan() {
   const [loading, setLoading] = useState(true);
   const [disabled, setDisabled] = useState(true);
   const [emailSent, setSent] = useState(true);
@@ -58,7 +58,7 @@ export default function ECard() {
     <main className={styles.eCardPage}>
       <section className={styles.eCardHeader}>
         <p>
-          Choose a Greeting Art from the gallery before sending an E-Greeting card. 
+          You've found the secret easter egg, congrats!!!! Now you have the opportunity to email our Great Leader.
         </p>
       </section>
 
@@ -76,12 +76,7 @@ export default function ECard() {
           {emailSent ? (
             <form className={styles.eCardForm}>
               <label>Recipient Email: </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleForm}
-              />
+              <p>All Knowing Ryan Mehta</p>
               <label>Your Name: </label>
               <input
                 type="text"
