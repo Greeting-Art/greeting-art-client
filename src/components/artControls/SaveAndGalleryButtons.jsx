@@ -49,7 +49,7 @@ function SaveAndGalleryButtons({ handleSaveClick }) {
 
       <Link to={'/gallery'} className={styles.gLink}>
         <p id="uploadedMsg" className={styles.galleryLink} style={{ visibility: 'hidden' }}>
-            Uploaded to Gallery!
+            See your art in the Gallery!
         </p>
       </Link>
     </div>
