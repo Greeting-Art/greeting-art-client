@@ -93,14 +93,19 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: orangered;
   font-family: 'RobotoMono', monospace;
 }
 
 .newModalContent {
   width: 640px;
   background-color: #fff;
+  /* color: #bd3200; */
+  color: orangered;
   border-radius: 8px;
+}
+
+.newModalContent:hover {
+  color: rgb(84, 113, 207);
 }
 
 /* .helpList {
@@ -153,6 +158,7 @@ p {
 .modalCloseButton:hover {
   background-color: white;
   color: orangered;
+  /* color: #bd3200; */
   border-radius: 4px;
 }
 
