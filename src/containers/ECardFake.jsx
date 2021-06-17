@@ -81,11 +81,9 @@ export default function ECard() {
                 name="email"
                 value={formData.email}
                 onChange={handleForm}
-                disabled={disabled}
               />
               <label>Your Name: </label>
               <input
-                disabled={disabled}
                 type="text"
                 name="senderName"
                 value={formData.senderName}
@@ -94,7 +92,6 @@ export default function ECard() {
               <label>Message (optional): </label>
               <br />
               <textarea className={styles.eCardTextArea}
-                disabled={disabled}
                 name="message"
                 value={formData.message}
                 onChange={handleForm}
