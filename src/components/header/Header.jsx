@@ -63,7 +63,7 @@ function Header() {
             Gallery
           </MenuItem>
           <MenuItem onClick={handleClose} component={Link} to="/ecard">
-            ECard
+            E-Card
           </MenuItem>
           <MenuItem onClick={handleClose} component={Link} to="/aboutus">
             About Us

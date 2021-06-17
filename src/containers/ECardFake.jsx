@@ -73,7 +73,7 @@ export default function ECard() {
             />
           </figure>
         </div>
-        <div className={styles.eCardForm}>
+        <div className={styles.eCardFormParent}>
           {emailSent ? (
             <form>
               <label>Recipient Email: </label>

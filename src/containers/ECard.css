@@ -9,6 +9,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-size: 1.8em;
+  text-align: center;
 }
 
 .eCardBody {
@@ -38,42 +40,46 @@
   align-items: center;
   justify-content: center;
   font-size: 1.2em;
+  width: 500px;
 }
 
-.eCardButton {
+label {
+  margin: 10px;
+}
+
+input{
+  width: 200px;
+}
+
+.eCardTextArea {
+  width: 250px;
+  height: 100px;
+}
+
+.buttons {
   background-color: rgb(84, 113, 207);
   color: white;
   padding: 8px;
   border-radius: 0;
   border: none;
-  /* background: none; */
   box-shadow: none;
-  width: 145px;
-  /* margin: 4px; */
-  font-family: 'Caveat', cursive;
-  font-size: 1.3em;
+  font-family: 'RobotoMono', monospace;
+  font-size: 1.2em;
 }
 
-.eCardFooter {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.eCardButton:hover {
+.buttons:hover {
   background-color: rgb(84, 113, 207);
   color: white;
   border: 1px solid  white;
-  /* background: none; */
+  margin: -1px;
   box-shadow: none;
 }
 
-.eCardButton:active {
+.buttons:active {
   background-color: white;
   color: rgb(84, 113, 207);
   border: dotted 1px white;
-  /* background: none; */
+  margin: -1px;
   box-shadow: none;
 }
 
@@ -87,4 +93,18 @@
   background-position: center;
   background-size: contain;
   height: 50vh;
+}
+
+.sentMsg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.eCardFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
