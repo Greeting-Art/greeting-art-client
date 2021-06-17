@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './header.css';
+import PropTypes from 'prop-types';
 
 export default function HelpModal({ show, onClose }) {
   if (!show) {
@@ -53,4 +54,9 @@ export default function HelpModal({ show, onClose }) {
       </section>
     </main>
   );
-}
+};
+
+HelpModal.propTypes = {
+    show: PropTypes.bool.isRequired,
+    onClose: PropTypes.func.isRequired
+};
