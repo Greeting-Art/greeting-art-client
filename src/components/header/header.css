@@ -40,6 +40,10 @@ p {
   position: relative;
 }
 
+.menuText {
+  font-family: 'RobotoMono', monospace;
+}
+
 /* .helpBox {
   background-color: white;
   display: flex;
