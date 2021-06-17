@@ -1,7 +1,6 @@
 .eCardPage {
   display: grid;
   grid-template-rows: 15vh 70vh 15vh;
-  /* font-family: 'Roboto Mono', monospace; */
 }
 
 .eCardHeader {
@@ -9,7 +8,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 1.8em;
+  font-size: 1.6em;
   text-align: center;
 }
 
@@ -102,9 +101,3 @@ input{
   justify-content: center;
 }
 
-.eCardFooter {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}

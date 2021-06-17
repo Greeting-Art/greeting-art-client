@@ -24,7 +24,7 @@ export default function ECard() {
   }, []);
 
   useEffect(() => {
-    if (formData.email.length > 1 && formData.senderName.length > 1) {
+    if(formData.email.length > 1 && formData.senderName.length > 1) {
       setDisabled(false);
     } else {
       setDisabled(true);
@@ -52,15 +52,14 @@ export default function ECard() {
     history.push('/');
   };
 
-  if (loading) return <h2>loading...</h2>;
+  if(loading) return <h2>loading...</h2>;
 
   return (
     <main className={styles.eCardPage}>
       <section className={styles.eCardHeader}>
-        <h1>
-          If you wish to choose what Greeting Art to send go over to the Gallery
-          Page and hover over your desired art
-        </h1>
+        <p>
+          Choose a Greeting Art from the gallery before sending an E-Greeting card. 
+        </p>
       </section>
 
       <section className={styles.eCardBody}>
@@ -75,28 +74,27 @@ export default function ECard() {
         </div>
         <div className={styles.eCardFormParent}>
           {emailSent ? (
-            <form>
+            <form className={styles.eCardForm}>
               <label>Recipient Email: </label>
               <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleForm}
+                disabled={disabled}
               />
-              <br />
-              <br />
               <label>Your Name: </label>
               <input
+                disabled={disabled}
                 type="text"
                 name="senderName"
                 value={formData.senderName}
                 onChange={handleForm}
               />
-              <br />
-              <br />
               <label>Message (optional): </label>
               <br />
-              <textarea
+              <textarea className={styles.eCardTextArea}
+                disabled={disabled}
                 name="message"
                 value={formData.message}
                 onChange={handleForm}
@@ -122,7 +120,6 @@ export default function ECard() {
         </div>
       </section>
       <section className={styles.eCardFooter}>
-        footer
         <br />
       </section>
     </main>
