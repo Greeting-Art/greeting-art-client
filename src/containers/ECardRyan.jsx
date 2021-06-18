@@ -1,7 +1,7 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
 import styles from './ECard.css';
-import { sendMsg } from '../utils/sendGridMessageRyan';
+import { sendMsg } from '../utils/sendGridMessage';
 import { useHistory } from 'react-router-dom';
 
 export default function ECardRyan() {
@@ -12,7 +12,7 @@ export default function ECardRyan() {
     'https://github.com/Greeting-Art/greeting-art-client/blob/feat/card-45-about-us-page-styling/src/assets/appIcons/happy-bday-ryan.png?raw=true'
   );
   const [formData, setForm] = useState({
-    email: '',
+    email: 'ryan.mehta@gmail.com',
     senderName: '',
     message: '',
   });
@@ -57,7 +57,7 @@ export default function ECardRyan() {
         <div className={styles.eCardDisplay}>
           <figure className={styles.canvasWrapper}>
             <img
-              src={`https://github.com/Greeting-Art/greeting-art-client/blob/feat/card-45-about-us-page-styling/src/assets/appIcons/happy-bday-ryan.png?raw=true`}
+              src={artId}
               height="360"
               width="360"
             />

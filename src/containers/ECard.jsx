@@ -22,7 +22,7 @@ export default function ECard() {
 
   useEffect(() => {
     setLoading(false);
-    setArtId(id);
+    setArtId(`https://greetingart.s3.us-west-2.amazonaws.com/${id}`);
   }, []);
 
   useEffect(() => {
@@ -69,7 +69,7 @@ export default function ECard() {
         <div className={styles.eCardDisplay}>
           <figure className={styles.canvasWrapper}>
             <img
-              src={`https://greetingart.s3.us-west-2.amazonaws.com/${id}`}
+              src={artId}
               height="500"
               width="500"
             />
