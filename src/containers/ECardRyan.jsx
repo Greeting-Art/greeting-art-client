@@ -23,14 +23,6 @@ export default function ECardRyan() {
     setLoading(false);
   }, []);
 
-  useEffect(() => {
-    if(formData.email.length > 1 && formData.senderName.length > 1) {
-      setDisabled(false);
-    } else {
-      setDisabled(true);
-    }
-  }, [formData.email, formData.senderName]);
-
   const handleForm = (e) => {
     setForm({
       ...formData,
@@ -94,7 +86,6 @@ export default function ECardRyan() {
               <br />
               <button
                 className={styles.buttons}
-                disabled={disabled}
                 onClick={handleSumbit}
               >
                 Send
