@@ -1,7 +1,7 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
 import styles from './ECard.css';
-import { sendMsg } from '../utils/sendGridMessageFake';
+import { sendMsg } from '../utils/sendGridMessage';
 import { useHistory } from 'react-router-dom';
 
 export default function ECard() {
@@ -65,7 +65,7 @@ export default function ECard() {
         <div className={styles.eCardDisplay}>
           <figure className={styles.canvasWrapper}>
             <img
-              src={`https://github.com/Greeting-Art/greeting-art-client/blob/dev/src/assets/appIcons/blob-ross_8f128.gif?raw=true`}
+              src={artId}
               height="360"
               width="360"
             />

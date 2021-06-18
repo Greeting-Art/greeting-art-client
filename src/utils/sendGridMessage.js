@@ -180,7 +180,7 @@ function sendMsg(formData, artId) {
         <div style="font-family: inherit; text-align: inherit">&nbsp;</div>
         <div></div></div></td>
               </tr><tr>
-                <td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px; background-color:#000000;" valign="top" align="center"><img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:100% !important; width:100%; height:auto !important;" src="https://greetingart.s3.us-west-2.amazonaws.com/${artId}" alt="" width="600" data-responsive="true" data-proportionally-constrained="false"></td>
+                <td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px; background-color:#000000;" valign="top" align="center"><img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:100% !important; width:100%; height:auto !important;" src="${artId}" alt="" width="600" data-responsive="true" data-proportionally-constrained="false"></td>
               </tr>
               <tr>
                 <td style="background-color:#ffffff; padding:40px 40px 40px 40px; line-height:22px; text-align:inherit;" height="100%" valign="top" bgcolor="#ffffff"><div><div style="font-family: inherit; text-align: inherit"><span style="font-size: 16px; font-family: verdana, geneva, sans-serif">${formData.message}</span></div>
