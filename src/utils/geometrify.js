@@ -1,22 +1,11 @@
 /* eslint-disable max-len */
 /* eslint-disable indent */
-const artResolution = 500;
+import { randomizeColor, randomizeSize, posNegToggle } from './math-utils.js';
 
-const randomizeColor = () => {
-  return Math.round(Math.random() * 254);
-};
+const artResolution = 500;
 
 const randomizeNumber = () => {
   return Math.round(Math.random() * artResolution);
-};
-
-const randomizeSize = () => {
-  return Math.round(Math.random() * 80);
-};
-
-const posNegToggle = () => {
-  const posNegArray = [1, -1];
-  return posNegArray[Math.round(Math.random() * 1)];
 };
 
 export const geometricArt = () => {
@@ -88,7 +77,7 @@ export const stealthyArt = () => {
       p5.noLoop();
     };
     p5.draw = () => {
-      const density = randomizeNumber() / 2;
+      const density = randomizeNumber() / 3;
       const randomShape = () => {
         const triAnchorOne = randomizeNumber();
         const triAnchorTwo = triAnchorOne + randomizeSize() * posNegToggle();

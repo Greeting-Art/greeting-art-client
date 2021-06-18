@@ -1,23 +1,8 @@
 /* eslint-disable max-len */
 /* eslint-disable indent */
+import { randomizeColor, randomizeCurve, randomizeSize } from './math-utils.js';
 
 const artResolution = 500;
-
-const randomizeRatio = () => {
-  return Math.round(Math.random() * 80);
-};
-
-const randomizeColor = () => {
-  return Math.round(Math.random() * 254);
-};
-
-const randomizeCurve = () => {
-  return Math.round(Math.random() * 640);
-};
-
-const randomizeSize = () => {
-  return Math.round(Math.random() * 80);
-};
 
 export const blankP5Canvas = () => {
   const sketch = (p5) => {
@@ -32,7 +17,6 @@ export const blankP5Canvas = () => {
       p5.background(c);
       p5.textSize(48);
       p5.textAlign(p5.CENTER);
-      p5.textFont('Caveat');
       p5.fill('white');
       p5.text('🖌', centerCoords, centerCoords);
     };
@@ -102,7 +86,7 @@ export const weirdArt = () => {
         randomizeCurve()
       );
 
-      const newDensity = randomizeRatio();
+      const newDensity = randomizeSize();
       const newColor = randomizeColor();
 
       for (let i = 0; i < 1000; i++) {
@@ -128,7 +112,7 @@ export const weirdArt = () => {
           p5.random(newDensity)
         );
       }
-      p5.textSize(randomizeRatio());
+      p5.textSize(randomizeSize());
     };
   };
   return sketch;

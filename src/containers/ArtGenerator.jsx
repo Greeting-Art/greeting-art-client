@@ -29,21 +29,9 @@ export default function ArtGenerator() {
   ];
 
   const toggleArtSource = () => {
-    let artIndex = Math.round(Math.random() * (functionArray.length - 4));
-    if (counter % 2 !== 0) {
-      const artSource = functionArray[artIndex];
-      return artSource;
-    } else {
-      if (artIndex < 3) {
-        artIndex = artIndex + 2;
-        const artSource = functionArray[artIndex];
-        return artSource;
-      } else {
-        if (artIndex >= 3) artIndex = artIndex - 2;
-        const artSource = functionArray[artIndex];
-        return artSource;
-      }
-    }
+    let artIndex = Math.round(Math.random() * (functionArray.length - 1));
+    const artSource = functionArray[artIndex];
+    return artSource;
   };
 
   const handleRandomClick = () => {
