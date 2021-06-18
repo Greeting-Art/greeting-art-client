@@ -29,7 +29,7 @@ export default function ArtGenerator() {
   ];
 
   const toggleArtSource = () => {
-    let artIndex = Math.round(Math.random() * 4);
+    let artIndex = Math.round(Math.random() * (functionArray.length - 4));
     if (counter % 2 !== 0) {
       const artSource = functionArray[artIndex];
       return artSource;
@@ -73,7 +73,6 @@ export default function ArtGenerator() {
             <BlobRoss stage={userStage} />
           </div>
           <div className={styles.centerColumn}>
-
             <figure className={styles.canvasWrapper}>
               {!yetRendered ? (
                 <P5Wrapper sketch={blankP5Canvas()} />
@@ -81,7 +80,6 @@ export default function ArtGenerator() {
                 <P5Wrapper sketch={toggleArtSource()} />
               )}
             </figure>
-
           </div>
           <div className={styles.rightColumn}>
             <button className={styles.randomButton} onClick={handleRandomClick}>
@@ -90,8 +88,7 @@ export default function ArtGenerator() {
             <SaveAndGalleryButtons handleSaveClick={handleSaveClick} />
           </div>
         </div>
-        <div className={styles.lowerBar}>
-        </div>
+        <div className={styles.lowerBar}></div>
       </section>
     </main>
   );
