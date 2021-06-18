@@ -6,8 +6,6 @@
 .fullHeader {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
-  margin-top: 40px;
-  /* height: 20vh; */
 }
 
 .linkBar {
@@ -16,7 +14,6 @@
   align-items: flex-start;
   justify-content: left;
   font-size: 0.8em;
-  /* background-color: white; */
 }
 
 p {
@@ -28,8 +25,6 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* font-weight: lighter;
-  font-size: 5em; */
 }
 
 .rightHelpBar {
@@ -44,43 +39,6 @@ p {
   font-family: 'RobotoMono', monospace;
 }
 
-/* .helpBox {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 240;
-  height: 240;
-  color: orangered;
-  justify-content: right;
-  align-items: flex-end;
-  position: absolute;
-  border: 1px solid orangered;
-  box-shadow: transparent;
-}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-#simple-menu {
-  
-}
-=======
-.welcomeText {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 1.2em;
-} */
-
-/* .linkMUI {
-  color: rgb(84, 113, 207);
-  background-color: red;
-} */
-
-/* unnecessary -- the style is coming from the global button style in app.css*/
-/* .iconButtonMUI:active {
-  border: none;
-} */
-
 .newModal {
   z-index: 1;
   position: fixed;
@@ -93,24 +51,20 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: orangered;
   font-family: 'RobotoMono', monospace;
 }
 
 .newModalContent {
   width: 640px;
   background-color: #fff;
+  color: orangered;
   border-radius: 8px;
 }
 
-/* .helpList {
-  list-style-type: circle;
-} */
+.newModalContent:hover {
+  color: rgb(84, 113, 207);
+}
 
-/* .helpItem {
-  display: flex;
-  flex-direction: column;
-} */
 .newModalHeader,
 .newModalFooter {
   padding: 20px;
@@ -124,8 +78,6 @@ p {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
 }
-
-/* set this title to more 3D13 word art */
 
 .newModalTitle {
   margin: 0;

@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import styles from './galleryList.css';
 
 function GalleryList({ Contents }) {
-  console.log('Contents in Gallery', Contents);
   return (
     <ul aria-label="artwork" className={styles.galleryUL}>
       {Contents.map((artWork) => (

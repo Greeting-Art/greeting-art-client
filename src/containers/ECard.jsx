@@ -52,7 +52,6 @@ export default function ECard() {
     history.push('/')
   }
 
-  // if (loading) return <h2>loading...</h2>;
   if (loading)
     return (
       <div className={styles.loadingSpinner}>
@@ -117,11 +116,6 @@ export default function ECard() {
 }
         </div>
       </section>
-      {/* <section className={styles.eCardFooter}>
-        footer
-        <br />
-        
-      </section> */}
     </main>
   );
 }

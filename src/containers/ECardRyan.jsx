@@ -9,7 +9,7 @@ export default function ECardRyan() {
   const [disabled, setDisabled] = useState(true);
   const [emailSent, setSent] = useState(true);
   const [artId, setArtId] = useState(
-    'https://github.com/Greeting-Art/greeting-art-client/blob/dev/src/assets/appIcons/blob-ross_8f128.gif?raw=true'
+    'https://github.com/Greeting-Art/greeting-art-client/blob/feat/card-45-about-us-page-styling/src/assets/appIcons/happy-bday-ryan.png?raw=true'
   );
   const [formData, setForm] = useState({
     email: '',
@@ -53,12 +53,11 @@ export default function ECardRyan() {
           You've found the secret easter egg, congrats!!!! Now you have the opportunity to email our Great Leader.
         </p>
       </section>
-
       <section className={styles.eCardBody}>
         <div className={styles.eCardDisplay}>
           <figure className={styles.canvasWrapper}>
             <img
-              src={`https://github.com/Greeting-Art/greeting-art-client/blob/dev/src/assets/appIcons/blob-ross_8f128.gif?raw=true`}
+              src={`https://github.com/Greeting-Art/greeting-art-client/blob/feat/card-45-about-us-page-styling/src/assets/appIcons/happy-bday-ryan.png?raw=true`}
               height="360"
               width="360"
             />

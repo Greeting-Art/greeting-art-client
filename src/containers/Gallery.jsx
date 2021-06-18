@@ -17,7 +17,6 @@ export default function Gallery() {
       .finally(() => setLoading(false));
   }, []);
 
-  // if (loading) return <h2 className={styles.loadingIndicator}>loading...</h2>;
   if (loading)
     return (
       <div className={styles.loadingSpinner}>
@@ -26,16 +25,16 @@ export default function Gallery() {
     );
 
   return (
+    <>
     <main className={styles.galleryPage}>
       <section className={styles.galleryHeader}>
         <p>Gallery</p>
       </section>
+    
       <section className={styles.galleryBody}>
         <GalleryList Contents={Contents} />
-        </section>
-        <div className={styles.lowerBar}>
-        </div>
-      
+      </section>
     </main>
+    </>
   );
 }
