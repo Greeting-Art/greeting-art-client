@@ -1,0 +1,96 @@
+.artPage {
+  margin-top: -20px;
+  display: grid;
+  grid-template-rows: 10vh 70vh;
+}
+
+.artHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.artBody {
+  display: grid;
+  grid-template-rows: 2fr 6fr 2fr;
+  margin-top: -50px;
+}
+
+.controlBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.artBar {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftColumn,
+.centerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  border: solid 1px white;
+}
+
+.randomButton {
+  background-color: rgb(84, 113, 207);
+  color: white;
+  padding: 8px;
+  margin: 3px;
+  border-radius: 0;
+  border: none;
+  font-size: 1.2em;
+  box-shadow: none;
+  font-family: 'Archivo', sans-serif;
+}
+
+/* cursor hovers over the button */
+.randomButton:hover {
+  background-color: rgb(84, 113, 207);
+  color: white;
+  outline: solid 1px white;
+}
+
+/* mouse click on the button */
+.randomButton:active {
+  background-color: white;
+  color: rgb(84, 113, 207);
+  outline: solid 1px white;
+}
+
+.lowerBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingSpinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/appIcons/splatter.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 50vh;
+}

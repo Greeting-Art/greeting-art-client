@@ -32,10 +32,15 @@ module.exports = {
     new CopyPlugin({
       patterns: [{ from: 'public' }],
     }),
+    new webpack.ProvidePlugin({
+      process: 'process/browser',
+    }),
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
+    modules: ['node_modules'],
   },
+  mode: 'none',
   module: {
     rules: [
       {
@@ -78,12 +83,23 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpeg|jpg|png|svg)$/,
+        test: /\.(jpeg|jpg|png|svg|gif)$/,
         use: {
           loader: 'url-loader',
           options: { limit: 1000 },
         },
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+        use: { loader: 'url-loader' },
+      },
+      // {
+      //   test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+      //   use: {
+      //     loader: 'url-loader',
+      //   },
+      // },
     ],
   },
 };

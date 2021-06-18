@@ -1,0 +1,116 @@
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+
+@include icon-button.core-styles;
+
+.fullHeader {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+
+.linkBar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;
+  font-size: 0.8em;
+}
+
+p {
+  margin: 20px;
+}
+
+.titleBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightHelpBar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: right;
+  position: relative;
+}
+
+.menuText {
+  font-family: 'RobotoMono', monospace;
+}
+
+.newModal {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'RobotoMono', monospace;
+}
+
+.newModalContent {
+  width: 640px;
+  background-color: #fff;
+  color: orangered;
+  border-radius: 8px;
+}
+
+.newModalContent:hover {
+  color: rgb(84, 113, 207);
+}
+
+.newModalHeader,
+.newModalFooter {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newModalFooter {
+  background-color: rgb(84, 113, 207);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.newModalTitle {
+  margin: 0;
+  color: rgb(84, 113, 207);
+  font-size: 1.5em;
+}
+
+.newModalBody {
+  padding: 10px;
+  border-top: 1px solid rgb(241, 241, 241);
+  border-bottom: 1px solid rgb(241, 241, 241);
+  font-size: 0.9em;
+}
+
+.modalCloseButton {
+  background-color: orangered;
+  color: white;
+  border-radius: 4px;
+  border: solid 1px white;
+  font-size: 1em;
+  box-shadow: none;
+  padding: 0px 8px 0px 8px;
+}
+
+.modalCloseButton:hover {
+  background-color: white;
+  color: orangered;
+  border-radius: 4px;
+}
+
+.modalCloseButton:active {
+  background-color: orangered;
+  color: white;
+  border-radius: 4px;
+  border: double 1px white;
+}
