@@ -1,17 +1,17 @@
 function sendMsg(formData, artId) {
-    return {
-        method: 'POST',
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Accept': '*/*',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            'to': `${formData.email}`,
-            'from': 'GreetingArt@outlook.com',
-            'subject': `${formData.senderName} has send you a Greeting Art`,
-            'html': `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  return {
+    method: 'POST',
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      Accept: '*/*',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      to: `${formData.email}`,
+      from: 'GreetingArt@outlook.com',
+      subject: `${formData.senderName} has send you a Greeting Art`,
+      html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
         <html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
             <head>
               <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -172,11 +172,11 @@ function sendMsg(formData, artId) {
               <tbody>
             </tbody></table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="qk51Jjn4bm3rn2Yb31Dxzb" data-mc-module-version="2019-10-22">
               <tbody><tr>
-                <td style="background-color:#ffffff; padding:50px 50px 10px 50px; line-height:22px; text-align:center;" height="100%" valign="top" bgcolor="#ffffff"><div><div style="font-family: inherit; text-align: inherit"><span style="font-size: 24px; font-family: verdana, geneva, sans-serif"><strong>You just recieved an Ecard from Greeting Art!.</strong></span></div><div></div></div></td>
+                <td style="background-color:#ffffff; padding:50px 50px 10px 50px; line-height:22px; text-align:center;" height="100%" valign="top" bgcolor="#ffffff"><div><div style="font-family: inherit; text-align: inherit"><span style="font-size: 24px; font-family: verdana, geneva, sans-serif"><strong>You just recieved an Ecard from Greeting Art!</strong></span></div><div></div></div></td>
               </tr>
             </tbody></table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="iTBXe9c6QUCujvmJs8hYKr" data-mc-module-version="2019-10-22">
               <tbody><tr>
-                <td style="background-color:#ffffff; padding:40px 40px 40px 40px; line-height:22px; text-align:inherit;" height="100%" valign="top" bgcolor="#ffffff"><div><div style="font-family: inherit; text-align: inherit"><span style="font-size: 16px; font-family: verdana, geneva, sans-serif">${formData.senderName} must love you! Or at least like you enough to send you a greenting card.</span></div>
+                <td style="background-color:#ffffff; padding:40px 40px 40px 40px; line-height:22px; text-align:inherit;" height="100%" valign="top" bgcolor="#ffffff"><div><div style="font-family: inherit; text-align: inherit"><span style="font-size: 16px; font-family: verdana, geneva, sans-serif">${formData.senderName} must love you! Or at least like you enough to send you a greeting card.</span></div>
         <div style="font-family: inherit; text-align: inherit">&nbsp;</div>
         <div></div></div></td>
               </tr><tr>
@@ -248,9 +248,9 @@ function sendMsg(formData, artId) {
                 </div>
               </center>
             </body>
-          </html>`
-        })
-    }
+          </html>`,
+    }),
+  };
 }
 
 export { sendMsg };
