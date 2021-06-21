@@ -1,3 +1,4 @@
+/* eslint-disable keyword-spacing */
 /* eslint-disable max-len */
 /* eslint-disable indent */
 import { randomizeColor, randomizeSize, posNegToggle } from './math-utils.js';

@@ -1,3 +1,5 @@
+/* eslint-disable keyword-spacing */
+/* eslint-disable prefer-const */
 /* eslint-disable max-len */
 /* eslint-disable indent */
 import { randomizeColor, randomizeCurve, randomizeSize } from './math-utils.js';

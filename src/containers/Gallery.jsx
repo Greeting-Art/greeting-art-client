@@ -1,3 +1,4 @@
+/* eslint-disable keyword-spacing */
 /* eslint-disable max-len */
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react';
